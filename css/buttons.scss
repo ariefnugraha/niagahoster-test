@@ -135,4 +135,10 @@ button, a {
       box-shadow: 0px 8px 10px rgba($color: $btn-text-hover-color, $alpha: 0.32);
     }
   }
+
+  // BTN BORDER
+  &.btn-border {
+      border-width: 1px;
+      border-style: solid;
+  }
 }

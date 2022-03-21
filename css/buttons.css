@@ -80,188 +80,63 @@
 }
 
 .bg-primary-blue-1 {
-  background-color: #007dff;
+  background: #007dff;
 }
 
 .bg-primary-blue-2 {
-  background-color: #0057b2;
+  background: #0057b2;
 }
 
 .bg-primary-blue-3 {
-  background-color: #e0efff;
+  background: #e0efff;
 }
 
 .bg-secondary-1 {
-  background-color: #ff9800;
+  background: #ff9800;
 }
 
 .bg-secondary-2 {
-  background-color: #c77700;
+  background: #c77700;
 }
 
 .bg-secondary-3 {
-  background-color: #ffe082;
+  background: #ffe082;
 }
 
 .bg-red-1 {
-  background-color: #f44336;
+  background: #f44336;
 }
 
 .bg-red-2 {
-  background-color: #a83232;
+  background: #a83232;
 }
 
 .bg-red-3 {
-  background-color: #fbb2b2;
+  background: #fbb2b2;
 }
 
 .bg-green-1 {
-  background-color: #00bfa6;
+  background: #00bfa6;
 }
 
 .bg-green-2 {
-  background-color: #00897b;
+  background: #00897b;
 }
 
 .bg-green-3 {
-  background-color: #adebe3;
+  background: #adebe3;
 }
 
 .bg-yellow-1 {
-  background-color: #ffc721;
+  background: #ffc721;
 }
 
 .bg-yellow-2 {
-  background-color: #ffb547;
+  background: #ffb547;
 }
 
 .bg-yellow-3 {
-  background-color: #ffedb8;
-}
-
-.heading-1 {
-  font: normal normal 700 56px/64px "Nunito Sans", sans-serif;
-  letter-spacing: 0em;
-}
-
-.heading-2 {
-  font: normal normal 700 40px/56px "Nunito Sans", sans-serif;
-  letter-spacing: -0.02em;
-}
-
-.heading-3 {
-  font: normal normal 700 32px/42px "Nunito Sans", sans-serif;
-  letter-spacing: 0em;
-}
-
-.heading-4 {
-  font: normal normal 700 28px/36px "Nunito Sans", sans-serif;
-  letter-spacing: 0em;
-}
-
-.heading-5 {
-  font: normal normal 700 24px/32px "Nunito Sans", sans-serif;
-  letter-spacing: 0.0025em;
-}
-
-.heading-6 {
-  font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.heading-7 {
-  font: normal normal 700 18px/27px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-.heading-8 {
-  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-.sub-1 {
-  font: normal normal 600 24px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.sub-2 {
-  font: normal normal 600 20px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.sub-3 {
-  font: normal normal 600 18px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.sub-4 {
-  font: normal normal 600 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.sub-5 {
-  font: normal normal 600 14px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.sub-6 {
-  font: normal normal 600 12px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.text-body-1 {
-  font: normal normal 400 20px/34px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.text-body-2 {
-  font: normal normal 400 18px/32px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.text-body-3 {
-  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.text-body-4 {
-  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.text-body-5 {
-  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.text-body-alt-16 {
-  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-.text-body-alt-14 {
-  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-.text-body-alt-12 {
-  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0em;
-}
-
-.text-caption-1 {
-  font: normal normal 400 14px/16px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-.text-caption-2 {
-  font: normal normal 400 12px/16px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-.text-overline {
-  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.04em;
+  background: #ffedb8;
 }
 
 button.btn, a.btn {
@@ -412,5 +287,10 @@ button.btn-text:active, a.btn-text:active {
   background: #ededed;
   -webkit-box-shadow: 0px 8px 10px rgba(242, 242, 242, 0.32);
           box-shadow: 0px 8px 10px rgba(242, 242, 242, 0.32);
+}
+
+button.btn-border, a.btn-border {
+  border-width: 1px;
+  border-style: solid;
 }
 /*# sourceMappingURL=buttons.css.map */
