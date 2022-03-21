@@ -1,111 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
 
-.heading-1 {
+@mixin heading-1 {
   font: normal normal 700 56px/64px "Nunito Sans", sans-serif;
   letter-spacing: 0em;
 }
 
-.heading-2 {
+@mixin heading-2 {
   font: normal normal 700 40px/56px "Nunito Sans", sans-serif;
   letter-spacing: -0.02em;
 }
 
-.heading-3 {
+@mixin heading-3 {
   font: normal normal 700 32px/42px "Nunito Sans", sans-serif;
   letter-spacing: 0em;
 }
 
-.heading-4 {
+@mixin heading-4 {
   font: normal normal 700 28px/36px "Nunito Sans", sans-serif;
   letter-spacing: 0em;
 }
 
-.heading-5 {
+@mixin heading-5 {
   font: normal normal 700 24px/32px "Nunito Sans", sans-serif;
   letter-spacing: 0.0025em;
 }
 
-.heading-6 {
+@mixin heading-6 {
   font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.heading-7 {
+@mixin heading-7 {
   font: normal normal 700 18px/27px "Nunito Sans", sans-serif;
   letter-spacing: 0.02em;
 }
 
-.heading-8 {
+@mixin heading-8 {
   font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.02em;
 }
 
-.sub-1 {
+@mixin sub-1 {
   font: normal normal 600 24px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.sub-2 {
+@mixin sub-2 {
   font: normal normal 600 20px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.sub-3 {
+@mixin sub-3 {
   font: normal normal 600 18px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.sub-4 {
+@mixin sub-4 {
   font: normal normal 600 16px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.sub-5 {
+@mixin sub-5 {
   font: normal normal 600 14px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.sub-6 {
+@mixin sub-6 {
   font: normal normal 600 12px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.text-body-1 {
+@mixin text-body-1 {
   font: normal normal 400 20px/34px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.text-body-2 {
+@mixin text-body-2 {
   font: normal normal 400 18px/32px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.text-body-3 {
+@mixin text-body-3 {
   font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.text-body-4 {
+@mixin text-body-4 {
   font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.text-body-5 {
+@mixin text-body-5 {
   font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
 }
 
-.text-body-alt-16 {
+@mixin text-body-alt-16 {
   font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.02em;
 }
 
-.text-body-alt-14 {
+@mixin text-body-alt-14 {
   font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.02em;
 }
 
-.text-body-alt-12 {
+@mixin text-body-alt-12 {
   font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0em;
 }
@@ -140,17 +140,17 @@
   letter-spacing: 0.02em;
 }
 
-.text-caption-1 {
+@mixin text-caption-1 {
   font: normal normal 400 14px/16px "Nunito Sans", sans-serif;
   letter-spacing: 0.02em;
 }
 
-.text-caption-2 {
+@mixin text-caption-2 {
   font: normal normal 400 12px/16px "Nunito Sans", sans-serif;
   letter-spacing: 0.02em;
 }
 
-.text-overline {
+@mixin text-overline {
   font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.04em;
 }
