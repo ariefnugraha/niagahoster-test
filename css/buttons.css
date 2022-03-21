@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+.text-color-primary {
+  color: #29384e;
+}
+
+.text-color-secondary-1 {
+  color: #546071;
+}
+
+.text-color-secondary-2 {
+  color: #a9afb8;
+}
+
+.text-disabled {
+  color: #a9afb8;
+}
+
+.text-primary-blue-1 {
+  color: #007dff;
+}
+
+.text-primary-blue-2 {
+  color: #0057b2;
+}
+
+.text-primary-blue-3 {
+  color: #e0efff;
+}
+
+.text-secondary-1 {
+  color: #ff9800;
+}
+
+.text-secondary-2 {
+  color: #c77700;
+}
+
+.text-secondary-3 {
+  color: #ffe082;
+}
+
+.text-red-1 {
+  color: #f44336;
+}
+
+.text-red-2 {
+  color: #a83232;
+}
+
+.text-red-3 {
+  color: #fbb2b2;
+}
+
+.text-green-1 {
+  color: #00bfa6;
+}
+
+.text-green-2 {
+  color: #00897b;
+}
+
+.text-green-3 {
+  color: #adebe3;
+}
+
+.text-yellow-1 {
+  color: #ffc721;
+}
+
+.text-yellow-2 {
+  color: #ffb547;
+}
+
+.text-yellow-3 {
+  color: #ffedb8;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.bg-primary-blue-1 {
+  background-color: #007dff;
+}
+
+.bg-primary-blue-2 {
+  background-color: #0057b2;
+}
+
+.bg-primary-blue-3 {
+  background-color: #e0efff;
+}
+
+.bg-secondary-1 {
+  background-color: #ff9800;
+}
+
+.bg-secondary-2 {
+  background-color: #c77700;
+}
+
+.bg-secondary-3 {
+  background-color: #ffe082;
+}
+
+.bg-red-1 {
+  background-color: #f44336;
+}
+
+.bg-red-2 {
+  background-color: #a83232;
+}
+
+.bg-red-3 {
+  background-color: #fbb2b2;
+}
+
+.bg-green-1 {
+  background-color: #00bfa6;
+}
+
+.bg-green-2 {
+  background-color: #00897b;
+}
+
+.bg-green-3 {
+  background-color: #adebe3;
+}
+
+.bg-yellow-1 {
+  background-color: #ffc721;
+}
+
+.bg-yellow-2 {
+  background-color: #ffb547;
+}
+
+.bg-yellow-3 {
+  background-color: #ffedb8;
+}
+
+.heading-1 {
+  font: normal normal 700 56px/64px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-2 {
+  font: normal normal 700 40px/56px "Nunito Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.heading-3 {
+  font: normal normal 700 32px/42px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-4 {
+  font: normal normal 700 28px/36px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-5 {
+  font: normal normal 700 24px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.0025em;
+}
+
+.heading-6 {
+  font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.heading-7 {
+  font: normal normal 700 18px/27px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.heading-8 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.sub-1 {
+  font: normal normal 600 24px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-2 {
+  font: normal normal 600 20px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-3 {
+  font: normal normal 600 18px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-4 {
+  font: normal normal 600 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-5 {
+  font: normal normal 600 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-6 {
+  font: normal normal 600 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-1 {
+  font: normal normal 400 20px/34px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-2 {
+  font: normal normal 400 18px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-3 {
+  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-4 {
+  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-5 {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-alt-16 {
+  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-body-alt-14 {
+  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-body-alt-12 {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.text-caption-1 {
+  font: normal normal 400 14px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-caption-2 {
+  font: normal normal 400 12px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-overline {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+button.btn, a.btn {
+  all: unset;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button.btn:hover, a.btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button.btn-rounded, a.btn-rounded {
+  border-radius: 40px;
+}
+
+button.icon-left, a.icon-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button.icon-left svg, a.icon-left svg {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+button.btn-lg, a.btn-lg {
+  font: normal normal 700 20px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+  padding: 12px 64px;
+}
+
+button.btn-lg-fixed, a.btn-lg-fixed {
+  font: normal normal 700 20px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+  width: 280px;
+  height: 50px;
+  padding: 12px 0;
+}
+
+button.btn-md, a.btn-md {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+  padding: 12px 40px;
+}
+
+button.btn-md-fixed, a.btn-md-fixed {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+  width: 280px;
+  height: 48px;
+  padding: 12px 0;
+}
+
+button.btn-sm, a.btn-sm {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+  padding: 12px 24px;
+}
+
+button.btn-primary, a.btn-primary {
+  background: #ff9800;
+  -webkit-box-shadow: 0px 4px 6px rgba(255, 152, 0, 0.24);
+          box-shadow: 0px 4px 6px rgba(255, 152, 0, 0.24);
+}
+
+button.btn-primary:hover, a.btn-primary:hover {
+  background: #f39100;
+  -webkit-box-shadow: 0px 8px 10px rgba(243, 145, 0, 0.32);
+          box-shadow: 0px 8px 10px rgba(243, 145, 0, 0.32);
+}
+
+button.btn-primary:active, a.btn-primary:active {
+  background: #dd8400;
+  -webkit-box-shadow: 0px 8px 10px rgba(243, 145, 0, 0.32);
+          box-shadow: 0px 8px 10px rgba(243, 145, 0, 0.32);
+}
+
+button.btn-disabled, a.btn-disabled {
+  background: #ececec;
+  -webkit-box-shadow: 0px 4px 6px rgba(236, 236, 236, 0.24);
+          box-shadow: 0px 4px 6px rgba(236, 236, 236, 0.24);
+}
+
+button.btn-neutral, a.btn-neutral {
+  background: #ffffff;
+}
+
+button.btn-neutral:hover, a.btn-neutral:hover {
+  background: #fff5e6;
+}
+
+button.btn-neutral:active, a.btn-neutral:active {
+  background: #ffeacc;
+  -webkit-box-shadow: 0px 8px 10px rgba(243, 145, 0, 0.32);
+          box-shadow: 0px 8px 10px rgba(243, 145, 0, 0.32);
+}
+
+button.btn-danger, a.btn-danger {
+  background: #f43636;
+  -webkit-box-shadow: 0px 4px 6px rgba(244, 54, 54, 0.24);
+          box-shadow: 0px 4px 6px rgba(244, 54, 54, 0.24);
+}
+
+button.btn-danger:hover, a.btn-danger:hover {
+  background: #e13030;
+  -webkit-box-shadow: 0px 8px 10px rgba(225, 48, 48, 0.32);
+          box-shadow: 0px 8px 10px rgba(225, 48, 48, 0.32);
+}
+
+button.btn-danger:active, a.btn-danger:active {
+  background: #c92d2d;
+  -webkit-box-shadow: 0px 8px 10px rgba(201, 45, 45, 0.32);
+          box-shadow: 0px 8px 10px rgba(201, 45, 45, 0.32);
+}
+
+button.btn-success, a.btn-success {
+  background: #00bfa6;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 191, 166, 0.24);
+          box-shadow: 0px 4px 6px rgba(0, 191, 166, 0.24);
+}
+
+button.btn-success:hover, a.btn-success:hover {
+  background: #00ad96;
+  -webkit-box-shadow: 0px 8px 10px rgba(0, 173, 150, 0.32);
+          box-shadow: 0px 8px 10px rgba(0, 173, 150, 0.32);
+}
+
+button.btn-success:active, a.btn-success:active {
+  background: #019b86;
+  -webkit-box-shadow: 0px 8px 10px rgba(1, 155, 134, 0.32);
+          box-shadow: 0px 8px 10px rgba(1, 155, 134, 0.32);
+}
+
+button.btn-text:hover, a.btn-text:hover {
+  background: #f2f2f2;
+  -webkit-box-shadow: 0px 8px 10px rgba(242, 242, 242, 0.32);
+          box-shadow: 0px 8px 10px rgba(242, 242, 242, 0.32);
+}
+
+button.btn-text:active, a.btn-text:active {
+  background: #ededed;
+  -webkit-box-shadow: 0px 8px 10px rgba(242, 242, 242, 0.32);
+          box-shadow: 0px 8px 10px rgba(242, 242, 242, 0.32);
+}
+/*# sourceMappingURL=buttons.css.map */
