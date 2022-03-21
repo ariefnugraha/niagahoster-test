@@ -139,6 +139,7 @@
   background: #ffedb8;
 }
 
+/* --------- FONTS --------------------------*/
 /* ------------ CSS RESET ----------------- */
 html,
 body,
@@ -311,8 +312,8 @@ a {
   margin-bottom: 12px;
   padding: 8px 20px;
   border-radius: 8px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .dropdown-1 a:hover {
