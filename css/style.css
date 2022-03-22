@@ -140,6 +140,360 @@
 }
 
 /* --------- FONTS --------------------------*/
+.heading-1 {
+  font: normal normal 700 56px/64px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-2 {
+  font: normal normal 700 40px/56px "Nunito Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.heading-3 {
+  font: normal normal 700 32px/42px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-4 {
+  font: normal normal 700 28px/36px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-5 {
+  font: normal normal 700 24px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.0025em;
+}
+
+.heading-6 {
+  font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.heading-7 {
+  font: normal normal 700 18px/27px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.heading-8 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.sub-1 {
+  font: normal normal 600 24px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-2 {
+  font: normal normal 600 20px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-3 {
+  font: normal normal 600 18px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-4 {
+  font: normal normal 600 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-5 {
+  font: normal normal 600 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-6 {
+  font: normal normal 600 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-1 {
+  font: normal normal 400 20px/34px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-2 {
+  font: normal normal 400 18px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-3 {
+  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-4 {
+  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-5 {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-alt-16 {
+  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-body-alt-14 {
+  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-body-alt-12 {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.text-btn-1 {
+  font: normal normal 700 20px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-btn-2 {
+  font: normal normal 700 18px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-btn-3 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-btn-4 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-btn-5 {
+  font: normal normal 700 14px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-btn-6 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-caption-1 {
+  font: normal normal 400 14px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-caption-2 {
+  font: normal normal 400 12px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-overline {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* ----------- WIDTH -------------------*/
+.w-1440 {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-770 {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* -------------- MARGINS ------------------- */
+.m-16 {
+  margin: 16px;
+}
+
+.mx-16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.m-16 {
+  margin: 16px;
+}
+
+.m-24 {
+  margin: 24px;
+}
+
+.mx-24 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.my-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.m-32 {
+  margin: 32px;
+}
+
+.mx-32 {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.my-32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.m-48 {
+  margin: 48px;
+}
+
+.mx-48 {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.my-48 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.ml-48 {
+  margin-left: 48px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+/* -------------- TEXT ALIGN -------------- */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* ---------------- INPUT ----------------- */
+form {
+  position: relative;
+}
+
+input {
+  all: unset;
+  background: #ffffff;
+  color: #29384e;
+}
+
+input[type="search"] {
+  display: inline-block;
+  position: relative;
+  padding: 12px 0 12px 32px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  position: relative;
+  right: 80px;
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 10px;
+  background: url("../assets/icons/close-circle.svg") no-repeat;
+}
+
+input[type="search"]:focus {
+  border: solid 1px #007dff;
+}
+
+input[type="search"] ~ button {
+  all: unset;
+  position: absolute;
+  top: 56%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+input.input-rounded {
+  border-radius: 40px;
+}
+
 /* ------------ CSS RESET ----------------- */
 html,
 body,
@@ -248,8 +602,7 @@ section {
 }
 
 body {
-  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
+  margin: 0;
 }
 
 ol,
@@ -287,7 +640,7 @@ a {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #ffffff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   -webkit-box-shadow: 0px 8px 32px rgba(0, 87, 178, 0.16);
           box-shadow: 0px 8px 32px rgba(0, 87, 178, 0.16);
@@ -306,8 +659,6 @@ a {
 }
 
 .dropdown-1 a {
-  font: normal normal 600 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
   display: block;
   margin-bottom: 12px;
   padding: 8px 20px;
@@ -325,7 +676,13 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #ffffff;
+  background: transparent;
 }
 
 header .main-header {
@@ -360,8 +717,6 @@ header .main-header ul > * {
 }
 
 header .main-header ul li a {
-  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
   position: relative;
   color: #ffffff;
 }
@@ -455,5 +810,25 @@ header nav ul li .dropdown-1 {
 header nav ul li .dropdown-1::before {
   top: -9.5%;
   left: 50%;
+}
+
+#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../assets/bg-hero.png") no-repeat center;
+  background-size: cover;
+  min-height: 626px;
+}
+
+#hero .container {
+  padding: 64px 0;
+}
+
+#hero .container form {
+  margin-top: 60px;
 }
 /*# sourceMappingURL=style.css.map */
