@@ -666,8 +666,8 @@ header {
   display: flex;
   align-items: center;
 
-  p {
-    @include heading-3;
+  h2 {
+    @include heading-3();
     margin-left: 16px;
   }
 }

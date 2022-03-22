@@ -743,7 +743,7 @@ header nav ul li .dropdown-1::before {
           align-items: center;
 }
 
-.title-section p {
+.title-section h2 {
   font: normal normal 700 32px/42px "Nunito Sans", sans-serif;
   letter-spacing: 0em;
   margin-left: 16px;
