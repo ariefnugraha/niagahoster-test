@@ -676,6 +676,7 @@ header {
   right: 0;
   color: #ffffff;
   background: transparent;
+  z-index: 999;
 }
 
 header .main-header {
@@ -1364,7 +1365,18 @@ footer .container .item .newsletter form input {
 
 /* ---------------- ASIDE --------------------- */
 aside {
+  position: relative;
   width: calc(25% - 30px);
   margin-left: 30px !important;
+}
+
+aside .sticky.scroll {
+  position: fixed;
+  top: 180px;
+}
+
+aside .sticky.absolute {
+  position: absolute;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

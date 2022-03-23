@@ -807,6 +807,7 @@ header {
   right: 0;
   color: $white;
   background: transparent;
+  z-index: 999;
   .main-header {
     display: flex;
     flex-flow: row wrap;
@@ -1355,6 +1356,19 @@ footer {
 
 /* ---------------- ASIDE --------------------- */
 aside {
+  position: relative;
   width: calc(25% - 30px);
   margin-left: 30px !important;
+
+  .sticky {
+    &.scroll {
+      position: fixed;
+      top: 180px;
+    }
+
+    &.absolute {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
