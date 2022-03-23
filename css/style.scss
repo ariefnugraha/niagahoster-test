@@ -1062,29 +1062,6 @@ header {
     width: calc(75% - 60px);
     margin-right: 60px;
 
-    .avatar {
-      display: flex;
-      align-items: center;
-
-      a {
-        &:last-child {
-          margin-left: 12px;
-        }
-
-        figure {
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-          }
-        }
-      }
-    }
-
     .content-list-caption {
       margin: 16px 0;
       h3 {

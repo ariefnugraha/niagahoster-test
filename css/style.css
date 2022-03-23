@@ -1020,33 +1020,6 @@ header nav ul li .dropdown-1::before {
   margin-right: 60px;
 }
 
-.content-list .text .avatar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.content-list .text .avatar a:last-child {
-  margin-left: 12px;
-}
-
-.content-list .text .avatar a figure {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-}
-
-.content-list .text .avatar a figure img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .content-list .text .content-list-caption {
   margin: 16px 0;
 }
