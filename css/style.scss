@@ -176,13 +176,9 @@ $btn-text-pressed-color: #ededed;
   background: $yellow-3;
 }
 
-/* ----------------------- CONTAINER ------------------------- */
-.col-3 {
-  max-width: 25%;
-}
-
-.col-9 {
-  max-width: 75%;
+/* ---------------------- CONTAINER ----------------------------*/
+.main-container {
+  width: 75%;
 }
 
 /* ------------------------ FLEX --------------------------------*/
@@ -596,7 +592,7 @@ input {
   background: $white;
   color: $text-color-primary;
   padding: 12px 32px;
-
+  border: solid 1px $divider-gray;
   &:focus {
     border: solid 1px $primary-blue-1;
   }
@@ -604,11 +600,11 @@ input {
   &[type="search"] {
     display: inline-block;
     position: relative;
-    padding: 12px 0 12px 32px;
+    padding: 12px 68px 12px 32px;
 
     &::-webkit-search-cancel-button {
       position: relative;
-      right: 80px;
+      right: -4px;
       -webkit-appearance: none;
       height: 28px;
       width: 28px;
@@ -620,7 +616,7 @@ input {
       all: unset;
       position: absolute;
       top: 56%;
-      right: 10px;
+      right: 32px;
       transform: translateY(-50%);
     }
   }
@@ -631,6 +627,9 @@ input {
 }
 
 /* ------------ CSS RESET ----------------- */
+* {
+  box-sizing: border-box !important;
+}
 
 html,
 body,
@@ -903,7 +902,9 @@ header {
 }
 
 .hero {
-  text-align: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
   background: url("../assets/bg-hero.png") no-repeat center;
   background-size: cover;
   min-height: 626px;
@@ -912,15 +913,14 @@ header {
   color: $white;
 
   &.invitation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     margin: 80px 0 0 0;
     padding: 0;
     min-height: 400px;
   }
 
   .container {
+  align-items: center;
     h1,
     h2 {
       @include heading-1();
@@ -1313,4 +1313,48 @@ footer {
       }
     }
   }
+}
+
+/* -------------- ACCORDION ---------------------*/
+.accordion {
+  .accordion-title {
+    @include heading-6();
+    margin-bottom: 24px;
+  }
+
+  .accordion-item {
+    button {
+      @include sub-5();
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+
+      svg {transition: .3s;}
+    }
+    .accordion-content {
+      display: none;
+      padding-left: 16px;
+
+      &.show {
+        display: block;
+      }
+
+      a {
+        @include text-body-5();
+        display: block;
+        color: $text-color-primary;
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+/* ---------------- ASIDE --------------------- */
+aside {
+  width: calc(25% - 30px);
+  margin-left: 30px !important;
 }

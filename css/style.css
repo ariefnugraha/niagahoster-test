@@ -140,13 +140,9 @@
   background: #ffedb8;
 }
 
-/* ----------------------- CONTAINER ------------------------- */
-.col-3 {
-  max-width: 25%;
-}
-
-.col-9 {
-  max-width: 75%;
+/* ---------------------- CONTAINER ----------------------------*/
+.main-container {
+  width: 75%;
 }
 
 /* ------------------------ FLEX --------------------------------*/
@@ -449,6 +445,7 @@ input {
   background: #ffffff;
   color: #29384e;
   padding: 12px 32px;
+  border: solid 1px #e0e0e0;
 }
 
 input:focus {
@@ -458,12 +455,12 @@ input:focus {
 input[type="search"] {
   display: inline-block;
   position: relative;
-  padding: 12px 0 12px 32px;
+  padding: 12px 68px 12px 32px;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
   position: relative;
-  right: 80px;
+  right: -4px;
   -webkit-appearance: none;
   height: 28px;
   width: 28px;
@@ -475,7 +472,7 @@ input[type="search"] ~ button {
   all: unset;
   position: absolute;
   top: 56%;
-  right: 10px;
+  right: 32px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -485,6 +482,11 @@ input.input-rounded {
 }
 
 /* ------------ CSS RESET ----------------- */
+* {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
 html,
 body,
 div,
@@ -804,16 +806,6 @@ header nav ul li .dropdown-1::before {
 }
 
 .hero {
-  text-align: center;
-  background: url("../assets/bg-hero.png") no-repeat center;
-  background-size: cover;
-  min-height: 626px;
-  padding: 96px 0 0 0;
-  margin-bottom: 80px;
-  color: #ffffff;
-}
-
-.hero.invitation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,9 +815,25 @@ header nav ul li .dropdown-1::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: url("../assets/bg-hero.png") no-repeat center;
+  background-size: cover;
+  min-height: 626px;
+  padding: 96px 0 0 0;
+  margin-bottom: 80px;
+  color: #ffffff;
+}
+
+.hero.invitation {
+  text-align: center;
   margin: 80px 0 0 0;
   padding: 0;
   min-height: 400px;
+}
+
+.hero .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .container h1,
@@ -1307,5 +1315,56 @@ footer .container .item .newsletter form input {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 12px;
+}
+
+/* -------------- ACCORDION ---------------------*/
+.accordion .accordion-title {
+  font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+  margin-bottom: 24px;
+}
+
+.accordion .accordion-item button {
+  font: normal normal 600 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+}
+
+.accordion .accordion-item button svg {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.accordion .accordion-item .accordion-content {
+  display: none;
+  padding-left: 16px;
+}
+
+.accordion .accordion-item .accordion-content.show {
+  display: block;
+}
+
+.accordion .accordion-item .accordion-content a {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+  display: block;
+  color: #29384e;
+}
+
+.accordion .accordion-item .accordion-content a:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* ---------------- ASIDE --------------------- */
+aside {
+  width: calc(25% - 30px);
+  margin-left: 30px !important;
 }
 /*# sourceMappingURL=style.css.map */
