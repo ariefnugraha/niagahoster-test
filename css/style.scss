@@ -366,8 +366,8 @@ $btn-text-pressed-color: #ededed;
 }
 
 /* ----------- WIDTH -------------------*/
-.w-1080 {
-  max-width: 1080px;
+.w-1110 {
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -466,6 +466,33 @@ $btn-text-pressed-color: #ededed;
 }
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.m-36 {
+  margin: 36px;
+}
+
+.mx-36 {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.my-36 {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.mt-36 {
+  margin-top: 36px;
+}
+.ml-36 {
+  margin-left: 36px;
+}
+.mr-36 {
+  margin-right: 36px;
+}
+.mb-36 {
+  margin-bottom: 36px;
 }
 
 .m-48 {
@@ -568,6 +595,12 @@ input {
   all: unset;
   background: $white;
   color: $text-color-primary;
+  padding: 12px 32px;
+
+  &:focus {
+    border: solid 1px $primary-blue-1;
+  }
+
   &[type="search"] {
     display: inline-block;
     position: relative;
@@ -583,9 +616,6 @@ input {
       background: url("../assets/icons/close-circle.svg") no-repeat;
     }
 
-    &:focus {
-      border: solid 1px $primary-blue-1;
-    }
     & ~ button {
       all: unset;
       position: absolute;
@@ -872,17 +902,33 @@ header {
   }
 }
 
-#hero {
-  display: flex;
-  align-items: center;
+.hero {
+  text-align: center;
   background: url("../assets/bg-hero.png") no-repeat center;
   background-size: cover;
   min-height: 626px;
   padding: 96px 0 0 0;
   margin-bottom: 80px;
+  color: $white;
+
+  &.invitation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0 0 0;
+    padding: 0;
+    min-height: 400px;
+  }
+
   .container {
-    h1 {
+    h1,
+    h2 {
       @include heading-1();
+    }
+
+    .subtitle {
+      margin: 28px auto 42px auto;
+      max-width: 826px;
     }
 
     form {
@@ -895,7 +941,9 @@ header {
   display: flex;
   align-items: center;
 
-  svg {margin-right: 16px;}
+  svg {
+    margin-right: 16px;
+  }
 
   h2 {
     @include heading-3();
@@ -903,14 +951,6 @@ header {
 }
 
 /* -------------------------- CARD ------------------------- */
-
-// CARD LIST
-.list-news {
-  display: flex;
-  flex-direction: column;
-  margin-top: 36px;
-}
-
 .content-list {
   display: flex;
   justify-content: space-between;
@@ -989,7 +1029,6 @@ header {
 
   figure {
     width: 25%;
-    margin: 0;
     border-radius: 5px;
 
     img {
@@ -997,6 +1036,88 @@ header {
       height: 100%;
       object-fit: cover;
       border-radius: 5px;
+    }
+  }
+}
+
+.content-row {
+  width: calc((100% / 3) - 30px);
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  & > *:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  figure {
+    width: 100%;
+    height: 136px;
+    border-radius: 5px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+  .avatar {
+    display: flex;
+    align-items: center;
+    a {
+      @include text-body-5();
+      &:last-child {
+        margin-left: 12px;
+      }
+
+      figure {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .content-row-caption {
+    h3 {
+      @include heading-8();
+    }
+    p {
+      @include text-caption-2();
+      margin-top: 8px;
+    }
+  }
+
+  .content-row-footer {
+    @include text-body-5();
+    a {
+      padding: 2px 16px;
+    }
+
+    span {
+      position: relative;
+      padding-left: 40px;
+
+      &::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: $text-color-primary;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+      }
     }
   }
 }
@@ -1041,6 +1162,155 @@ header {
     p {
       @include sub-4();
       margin-top: 24px;
+    }
+  }
+}
+
+/* ------------------------ PAGINATION ------------------------ */
+.pagination {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+
+  .pagination-item {
+    @include sub-4();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border: solid 1px $divider-gray;
+    border-radius: 8px;
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+
+    &.prev svg path {
+      fill: $divider-gray;
+    }
+    &.active {
+      background: $primary-blue-1;
+      color: $white;
+    }
+  }
+}
+
+// ------------------------ FOOTER ----------------------------
+footer {
+  padding: 96px 0;
+  background: $bg-blue-2;
+  color: $white;
+
+  .container {
+    max-width: 1110px;
+    width: calc(100% + 100px);
+    display: flex;
+    margin: 0 auto;
+
+    &.copyright {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 62px;
+      padding-top: 32px;
+      border-top: solid 1px $text-color-secondary-1;
+      @include text-body-4();
+
+      .text {
+        max-width: 630px;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 100px;
+    }
+
+    .item {
+      width: calc((25% - 100px));
+      &:last-child {
+        width: 50%;
+      }
+
+      div {
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
+        .title {
+          @include heading-8();
+          margin-bottom: 16px;
+        }
+
+        a {
+          @include text-body-4();
+          display: block;
+          color: $text-color-disabled;
+
+          &:hover {
+            color: $white;
+          }
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .row {
+        display: flex;
+        .item {
+          @include text-body-4();
+          width: 50%;
+
+          p:not(:last-child),
+          .logo {
+            margin-bottom: 32px;
+          }
+
+          div p:not(:last-child) {
+            margin-bottom: 8px;
+          }
+
+          .social {
+            max-width: 255px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -18px;
+            margin-bottom: -18px;
+            & > * {
+              margin-left: 18px;
+              margin-bottom: 18px;
+            }
+
+            .social-item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 48px;
+              height: 48px;
+              background: $text-color-secondary-1;
+              border-radius: 50%;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .newsletter {
+        p {
+          @include heading-8();
+        }
+
+        form {
+          display: flex;
+          input {
+            flex-grow: 1;
+            margin-right: 12px;
+          }
+        }
+      }
     }
   }
 }
