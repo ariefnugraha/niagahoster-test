@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- START NAVBAR -->
+    <header class="navbar">
+        <div class="main-header">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Niagahoster Logo" width="156" height="42">
+            </a>
+
+            <ul>
+                <li><a href="#">Hosting</a></li>
+                <li><a href="#">VPS</a></li>
+                <li><a href="#">Domain</a></li>
+                <li><a href="#">Kemitraan</a></li>
+                <li><a href="#">Wawasan</a></li>
+                <li><a href="#">Acara</a></li>
+            </ul>
+
+            <div class="right-menu">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.5 19C8.20333 19 7.91332 19.088 7.66664 19.2528C7.41997 19.4176 7.22771 19.6519 7.11418 19.926C7.00065 20.2001 6.97094 20.5017 7.02882 20.7926C7.0867 21.0836 7.22956 21.3509 7.43934 21.5607C7.64912 21.7704 7.91639 21.9133 8.20736 21.9712C8.49834 22.0291 8.79994 21.9993 9.07403 21.8858C9.34811 21.7723 9.58238 21.58 9.7472 21.3334C9.91203 21.0867 10 20.7967 10 20.5C10 20.1022 9.84196 19.7206 9.56066 19.4393C9.27936 19.158 8.89782 19 8.5 19ZM19 16H7C6.73478 16 6.48043 15.8946 6.29289 15.7071C6.10536 15.5196 6 15.2652 6 15C6 14.7348 6.10536 14.4804 6.29289 14.2929C6.48043 14.1054 6.73478 14 7 14H15.491C16.1425 13.998 16.7758 13.7848 17.2959 13.3925C17.8161 13.0002 18.195 12.4499 18.376 11.824L19.961 6.274C20.0034 6.12526 20.0107 5.96872 19.9823 5.81669C19.954 5.66465 19.8907 5.52126 19.7976 5.3978C19.7045 5.27433 19.584 5.17414 19.4456 5.10512C19.3072 5.0361 19.1547 5.00011 19 5H6.74C6.53281 4.41702 6.15083 3.91213 5.64616 3.55421C5.14149 3.19629 4.5387 3.00275 3.92 3H3C2.73478 3 2.48043 3.10536 2.29289 3.29289C2.10536 3.48043 2 3.73478 2 4C2 4.26522 2.10536 4.51957 2.29289 4.70711C2.48043 4.89464 2.73478 5 3 5H3.921C4.13815 5.00069 4.34924 5.0717 4.52266 5.2024C4.69608 5.33309 4.8225 5.51644 4.883 5.725L5.038 6.27V6.275L6.679 12.017C5.91517 12.0987 5.21176 12.4702 4.71375 13.0551C4.21574 13.64 3.96107 14.3936 4.00222 15.1607C4.04338 15.9278 4.37722 16.6499 4.93496 17.1781C5.49269 17.7064 6.23181 18.0005 7 18H19C19.2652 18 19.5196 17.8946 19.7071 17.7071C19.8946 17.5196 20 17.2652 20 17C20 16.7348 19.8946 16.4804 19.7071 16.2929C19.5196 16.1054 19.2652 16 19 16ZM17.674 7L16.454 11.274C16.3936 11.4829 16.2671 11.6666 16.0935 11.7975C15.9199 11.9284 15.7085 11.9995 15.491 12H8.754L8.499 11.108L7.326 7H17.674ZM16.5 19C16.2033 19 15.9133 19.088 15.6666 19.2528C15.42 19.4176 15.2277 19.6519 15.1142 19.926C15.0006 20.2001 14.9709 20.5017 15.0288 20.7926C15.0867 21.0836 15.2296 21.3509 15.4393 21.5607C15.6491 21.7704 15.9164 21.9133 16.2074 21.9712C16.4983 22.0291 16.7999 21.9993 17.074 21.8858C17.3481 21.7723 17.5824 21.58 17.7472 21.3334C17.912 21.0867 18 20.7967 18 20.5C18 20.1022 17.842 19.7206 17.5607 19.4393C17.2794 19.158 16.8978 19 16.5 19Z"
+                            fill="white" />
+                    </svg>
+
+                </a>
+                <div class="translate">
+                    <span>ID <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.0002 9.16994C16.8128 8.98369 16.5594 8.87915 16.2952 8.87915C16.031 8.87915 15.7776 8.98369 15.5902 9.16994L12.0002 12.7099L8.46019 9.16994C8.27283 8.98369 8.01938 8.87915 7.75519 8.87915C7.49101 8.87915 7.23756 8.98369 7.05019 9.16994C6.95646 9.26291 6.88207 9.37351 6.8313 9.49537C6.78053 9.61723 6.75439 9.74793 6.75439 9.87994C6.75439 10.012 6.78053 10.1427 6.8313 10.2645C6.88207 10.3864 6.95646 10.497 7.05019 10.5899L11.2902 14.8299C11.3832 14.9237 11.4938 14.9981 11.6156 15.0488C11.7375 15.0996 11.8682 15.1257 12.0002 15.1257C12.1322 15.1257 12.2629 15.0996 12.3848 15.0488C12.5066 14.9981 12.6172 14.9237 12.7102 14.8299L17.0002 10.5899C17.0939 10.497 17.1683 10.3864 17.2191 10.2645C17.2699 10.1427 17.296 10.012 17.296 9.87994C17.296 9.74793 17.2699 9.61723 17.2191 9.49537C17.1683 9.37351 17.0939 9.26291 17.0002 9.16994Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <div class="dropdown-1">
+                        <a href="#">ID</a>
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+                <a href="#" class="login btn btn-rounded btn-md btn-border">Login</a>
+            </div>
+        </div>
+    </header>
+    <!-- END NAVBAR-->
+
+    <!-- START CONTAINER -->
+    <div class="w-1110 flex cut-by-navbar">
+        <!-- START MAIN CONTAINER -->
+        <div class="main-container">
+            <!-- START SEMUA ARTIKEL -->
+            <div>
+                <!-- START TITLE SECTION -->
+                <div class="title-section">
+                    <h2>Semua Artikel</h2>
+                </div>
+                <!-- END TITLE SECTION -->
+
+                <!-- START LIST NEWS -->
+                <div class="content-row-list mt-36">
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <figure>
+                            <img src="assets/news-image.png" alt="News Image" width="255" height="136">
+                        </figure>
+
+                        <div class="avatar">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/avatar.png" alt="Avatar" width="24" height="24">
+                                </figure>
+                            </a>
+
+                            <a href="#">Nida Regita F</a>
+                        </div>
+
+                        <div class="content-row-caption">
+                            <h3><a href="#">4+ Cara Mudah Cek IP Hosting Website</a></h3>
+                            <p>Anda ingin tahu cara cek IP hosting? Selamat, Anda berada di halaman yang tepat!
+                                IP hosti...</p>
+                        </div>
+
+                        <div class="content-row-footer">
+                            <a href="#" class="btn-rounded bg-primary-blue-3 text-primary-blue-1">Hosting</a>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END LIST NEWS -->
+
+                <!-- START PAGINATION -->
+                <div class="pagination">
+                    <a href="#" class="pagination-item prev">
+                        <img src="assets/icons/next.svg" alt="Next" width="24" height="24">
+                    </a>
+                    <a href="#" class="pagination-item">1</a>
+                    <a href="#" class="pagination-item active">2</a>
+                    <a href="#" class="pagination-item">3</a>
+                    <a href="#" class="pagination-item dot">
+                        <img src="assets/icons/dot.svg" alt="Dot" width="18" height="4">
+                    </a>
+                    <a href="#" class="pagination-item">13</a>
+                    <a href="#" class="pagination-item next">
+                        <img src="assets/icons/next.svg" alt="Next" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+            <!-- END SEMUA ARTIKEL-->
+        </div>
+        <!-- END MAIN CONTAINER -->
+
+        <!-- START SIDEBAR -->
+        <aside>
+            <div class="sticky">
+                <form action="">
+                    <input type="search" placeholder="Cari artikel blog" class="w-100 input-rounded">
+                    <button type="submit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.8909 20.3436C22.0891 20.5488 22.1998 20.8229 22.1998 21.1082C22.1998 21.3934 22.0891 21.6676 21.8909 21.8727L21.8891 21.8746C21.7869 21.9777 21.6653 22.0596 21.5313 22.1154C21.3973 22.1713 21.2536 22.2001 21.1084 22.2001C20.9633 22.2001 20.8196 22.1713 20.6856 22.1154C20.5517 22.0596 20.4301 21.9778 20.328 21.8748L15.1437 16.6881C13.5114 17.9412 11.4697 18.5439 9.41496 18.3748C7.30056 18.2007 5.3332 17.2226 3.91737 15.6415C2.50155 14.0604 1.74488 11.9965 1.80291 9.87432C1.86094 7.7521 2.72925 5.73275 4.22936 4.23151C5.72947 2.73026 7.74735 1.86123 9.86809 1.80316C11.9888 1.74508 14.0512 2.50238 15.6311 3.91929C17.211 5.33619 18.1884 7.305 18.3623 9.42087C18.5313 11.4769 17.9291 13.52 16.677 15.1536L21.8909 20.3436ZM6.72695 15.1931C7.72947 15.8634 8.9081 16.2212 10.1138 16.2212C11.7306 16.2212 13.2812 15.5785 14.4244 14.4343C15.5677 13.2902 16.21 11.7383 16.21 10.1202C16.21 8.91349 15.8525 7.7339 15.1826 6.73059C14.5127 5.72727 13.5606 4.94531 12.4467 4.48355C11.3328 4.0218 10.107 3.90099 8.9245 4.13638C7.74197 4.37178 6.65573 4.95283 5.80314 5.80606C4.95055 6.6593 4.36992 7.7464 4.13468 8.92992C3.89944 10.1134 4.02017 11.3402 4.4816 12.455C4.94303 13.5699 5.72443 14.5227 6.72695 15.1931Z"
+                                fill="#7F8895" />
+                        </svg>
+                    </button>
+                </form>
+
+
+
+                <div class="accordion mt-24">
+                    <p class="accordion-title">Kategori Blog</p>
+                    <div class="accordion-item">
+                        <button type="button" class="btn w-100">
+                            Tutorial
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9999 9.16994C16.8126 8.98369 16.5591 8.87915 16.2949 8.87915C16.0308 8.87915 15.7773 8.98369 15.5899 9.16994L11.9999 12.7099L8.45995 9.16994C8.27259 8.98369 8.01913 8.87915 7.75495 8.87915C7.49076 8.87915 7.23731 8.98369 7.04995 9.16994C6.95622 9.26291 6.88183 9.37351 6.83106 9.49537C6.78029 9.61723 6.75415 9.74793 6.75415 9.87994C6.75415 10.012 6.78029 10.1427 6.83106 10.2645C6.88183 10.3864 6.95622 10.497 7.04995 10.5899L11.2899 14.8299C11.3829 14.9237 11.4935 14.9981 11.6154 15.0488C11.7372 15.0996 11.8679 15.1257 11.9999 15.1257C12.132 15.1257 12.2627 15.0996 12.3845 15.0488C12.5064 14.9981 12.617 14.9237 12.7099 14.8299L16.9999 10.5899C17.0937 10.497 17.1681 10.3864 17.2188 10.2645C17.2696 10.1427 17.2957 10.012 17.2957 9.87994C17.2957 9.74793 17.2696 9.61723 17.2188 9.49537C17.1681 9.37351 17.0937 9.26291 16.9999 9.16994Z"
+                                    fill="#29384E" />
+                            </svg>
+
+                        </button>
+
+                        <div class="accordion-content">
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button type="button" class="btn w-100">
+                            Digital Marketing
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9999 9.16994C16.8126 8.98369 16.5591 8.87915 16.2949 8.87915C16.0308 8.87915 15.7773 8.98369 15.5899 9.16994L11.9999 12.7099L8.45995 9.16994C8.27259 8.98369 8.01913 8.87915 7.75495 8.87915C7.49076 8.87915 7.23731 8.98369 7.04995 9.16994C6.95622 9.26291 6.88183 9.37351 6.83106 9.49537C6.78029 9.61723 6.75415 9.74793 6.75415 9.87994C6.75415 10.012 6.78029 10.1427 6.83106 10.2645C6.88183 10.3864 6.95622 10.497 7.04995 10.5899L11.2899 14.8299C11.3829 14.9237 11.4935 14.9981 11.6154 15.0488C11.7372 15.0996 11.8679 15.1257 11.9999 15.1257C12.132 15.1257 12.2627 15.0996 12.3845 15.0488C12.5064 14.9981 12.617 14.9237 12.7099 14.8299L16.9999 10.5899C17.0937 10.497 17.1681 10.3864 17.2188 10.2645C17.2696 10.1427 17.2957 10.012 17.2957 9.87994C17.2957 9.74793 17.2696 9.61723 17.2188 9.49537C17.1681 9.37351 17.0937 9.26291 16.9999 9.16994Z"
+                                    fill="#29384E" />
+                            </svg>
+
+                        </button>
+
+                        <div class="accordion-content">
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button type="button" class="btn w-100">
+                            Web Development & Design
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9999 9.16994C16.8126 8.98369 16.5591 8.87915 16.2949 8.87915C16.0308 8.87915 15.7773 8.98369 15.5899 9.16994L11.9999 12.7099L8.45995 9.16994C8.27259 8.98369 8.01913 8.87915 7.75495 8.87915C7.49076 8.87915 7.23731 8.98369 7.04995 9.16994C6.95622 9.26291 6.88183 9.37351 6.83106 9.49537C6.78029 9.61723 6.75415 9.74793 6.75415 9.87994C6.75415 10.012 6.78029 10.1427 6.83106 10.2645C6.88183 10.3864 6.95622 10.497 7.04995 10.5899L11.2899 14.8299C11.3829 14.9237 11.4935 14.9981 11.6154 15.0488C11.7372 15.0996 11.8679 15.1257 11.9999 15.1257C12.132 15.1257 12.2627 15.0996 12.3845 15.0488C12.5064 14.9981 12.617 14.9237 12.7099 14.8299L16.9999 10.5899C17.0937 10.497 17.1681 10.3864 17.2188 10.2645C17.2696 10.1427 17.2957 10.012 17.2957 9.87994C17.2957 9.74793 17.2696 9.61723 17.2188 9.49537C17.1681 9.37351 17.0937 9.26291 16.9999 9.16994Z"
+                                    fill="#29384E" />
+                            </svg>
+
+                        </button>
+
+                        <div class="accordion-content">
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button type="button" class="btn w-100">
+                            Insight Bisnis
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9999 9.16994C16.8126 8.98369 16.5591 8.87915 16.2949 8.87915C16.0308 8.87915 15.7773 8.98369 15.5899 9.16994L11.9999 12.7099L8.45995 9.16994C8.27259 8.98369 8.01913 8.87915 7.75495 8.87915C7.49076 8.87915 7.23731 8.98369 7.04995 9.16994C6.95622 9.26291 6.88183 9.37351 6.83106 9.49537C6.78029 9.61723 6.75415 9.74793 6.75415 9.87994C6.75415 10.012 6.78029 10.1427 6.83106 10.2645C6.88183 10.3864 6.95622 10.497 7.04995 10.5899L11.2899 14.8299C11.3829 14.9237 11.4935 14.9981 11.6154 15.0488C11.7372 15.0996 11.8679 15.1257 11.9999 15.1257C12.132 15.1257 12.2627 15.0996 12.3845 15.0488C12.5064 14.9981 12.617 14.9237 12.7099 14.8299L16.9999 10.5899C17.0937 10.497 17.1681 10.3864 17.2188 10.2645C17.2696 10.1427 17.2957 10.012 17.2957 9.87994C17.2957 9.74793 17.2696 9.61723 17.2188 9.49537C17.1681 9.37351 17.0937 9.26291 16.9999 9.16994Z"
+                                    fill="#29384E" />
+                            </svg>
+
+                        </button>
+
+                        <div class="accordion-content">
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button type="button" class="btn w-100">
+                            News & Update
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9999 9.16994C16.8126 8.98369 16.5591 8.87915 16.2949 8.87915C16.0308 8.87915 15.7773 8.98369 15.5899 9.16994L11.9999 12.7099L8.45995 9.16994C8.27259 8.98369 8.01913 8.87915 7.75495 8.87915C7.49076 8.87915 7.23731 8.98369 7.04995 9.16994C6.95622 9.26291 6.88183 9.37351 6.83106 9.49537C6.78029 9.61723 6.75415 9.74793 6.75415 9.87994C6.75415 10.012 6.78029 10.1427 6.83106 10.2645C6.88183 10.3864 6.95622 10.497 7.04995 10.5899L11.2899 14.8299C11.3829 14.9237 11.4935 14.9981 11.6154 15.0488C11.7372 15.0996 11.8679 15.1257 11.9999 15.1257C12.132 15.1257 12.2627 15.0996 12.3845 15.0488C12.5064 14.9981 12.617 14.9237 12.7099 14.8299L16.9999 10.5899C17.0937 10.497 17.1681 10.3864 17.2188 10.2645C17.2696 10.1427 17.2957 10.012 17.2957 9.87994C17.2957 9.74793 17.2696 9.61723 17.2188 9.49537C17.1681 9.37351 17.0937 9.26291 16.9999 9.16994Z"
+                                    fill="#29384E" />
+                            </svg>
+
+                        </button>
+
+                        <div class="accordion-content">
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                            <a href="#">Category Item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+        <!-- END SIDEBAR -->
+    </div>
+    <!-- END CONTAINER -->
+
+    <!-- START INVITATION-->
+    <section class="hero invitation mt-80">
+        <div class="container">
+            <h2>Awali Kesuksesan Anda Bersama Niagahoster</h2>
+            <p class="subtitle">Kini tidak lagi sulit mewujudkan website impian. Performa hebat, keamanan ekstra, dan
+                layanan dukungan teknis yang bisa diandalkan - semua dengan harga terjangkau!</p>
+            <a href="#" class="btn btn-lg btn-rounded btn-primary text-btn-1">Mulai Sekarang</a>
+        </div>
+
+    </section>
+    <!-- END INVITATION-->
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="item">
+                <div>
+                    <p class="title">Web Hosting</p>
+                    <a href="#">Hosting Indonesia</a>
+                    <a href="#">Cloud Hosting</a>
+                    <a href="#">Email Hosting</a>
+                    <a href="#">Web Hosting Unlimited</a>
+                    <a href="#">Hosting Terbaik</a>
+                    <a href="#">Hosting Murah</a>
+                    <a href="#">Hosting Singapore SG</a>
+                    <a href="#">Keamanan SSL/HTTPS</a>
+                    <a href="#">Data Center Hosting Terbaik</a>
+                    <a href="#">Hosting Gratis</a>
+                    <a href="#">Transfer Hosting</a>
+                </div>
+
+                <div>
+                    <p class="title">Domain</p>
+                    <a href="#">Domain</a>
+                    <a href="#">Domain .ID</a>
+                    <a href="#">Domain Gratis</a>
+                    <a href="#">Promosi Domain .COM</a>
+                    <a href="#">WHOIS</a>
+                    <a href="#">Transfer Domain</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <p class="title">Virtual Private Server</p>
+                    <a href="#">VPS KVM Indonesia</a>
+                    <a href="#">Cloud VPS Hosting</a>
+                    <a href="#">CyberPanel VPS Hosting</a>
+                </div>
+
+                <div>
+                    <p class="title">WordPress Hosting</p>
+                    <a href="#">WordPress Hosting</a>
+                    <a href="#">Cloud VPS Hosting</a>
+                    <a href="#">Managed WordPress</a>
+                </div>
+
+                <div>
+                    <p class="title">Website</p>
+                    <a href="#">Website Instan</a>
+                    <a href="#">Jasa Pembuatan Website</a>
+                </div>
+
+                <div>
+                    <p class="title">Bantuan</p>
+                    <a href="#">Cara Pembayaran</a>
+                    <a href="#">Ebook Gratis</a>
+                    <a href="#">Ebook Gratis</a>
+                    <a href="#">Knowledge Base</a>
+                    <a href="#">Niagahoster Blog</a>
+                    <a href="#">Niagahoster Course</a>
+                    <a href="#">Niagahoster Forum</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row">
+                    <div class="item">
+                        <div>
+                            <p class="title">Kemitraan</p>
+                            <a href="#">Niagahoster Poin</a>
+                            <a href="#">Niagahoster Partner</a>
+                            <a href="#">Program Afiliasi Niagahoster</a>
+                        </div>
+
+                        <div>
+                            <p class="title">Perusahaan</p>
+                            <a href="#">Tentang Niagahoster</a>
+                            <a href="#">Kontak</a>
+                            <a href="#">Karir</a>
+                            <a href="#">Event</a>
+                            <a href="#">Status Layanan</a>
+                            <a href="#">Review Pelanggan</a>
+                            <a href="#">Penawaran & Promo Spesial</a>
+                            <a href="#">Niagahoster Virtual Summit</a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/niagahoster-logo.png" alt="Niagahoster Logo" class="logo" width="255"
+                            height="40">
+                        <p>Misi kami adalah membantu jutaan orang memanfaatkan potensi yang ada di internet untuk
+                            membangun kesuksesan online.</p>
+
+                        <p>Jl. Palagan Tentara Pelajar No 81 Jongkang, Sariharjo, Ngaglik, Sleman
+                            Daerah Istimewa Yogyakarta 55581</p>
+
+                        <div class="contact">
+                            <p>Telepon: 0274-2885822</p>
+                            <p>WhatsApp: 085943258274</p>
+                            <p>Telegram: @niagahost_bot</p>
+                        </div>
+
+                        <div class="social">
+                            <a class="social-item">
+                                <img src="assets/icons/facebook.svg" alt="Facebook">
+                            </a>
+
+                            <a class="social-item">
+                                <img src="assets/icons/instagram.svg" alt="Instagram">
+                            </a>
+
+                            <a class="social-item">
+                                <img src="assets/icons/linkedin.svg" alt="linkedin">
+                            </a>
+
+                            <a class="social-item">
+                                <img src="assets/icons/twitter.svg" alt="twitter">
+                            </a>
+
+                            <a class="social-item">
+                                <img src="assets/icons/tiktok.svg" alt="tiktok">
+                            </a>
+
+                            <a class="social-item">
+                                <img src="assets/icons/youtube.svg" alt="youtube">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="newsletter">
+                    <p>Newsletter</p>
+                    <form action="" class="mt-16">
+                        <input type="email" name="" id="email" placeholder="Write your input here"
+                            class="input-rounded">
+                        <button type="submit" class="btn btn-md btn-primary btn-rounded">Berlangganan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright">
+            <div class="w-100 flex justify-between">
+                <div class="text">
+                    <p>Copyright ©2021 Niagahoster | Hosting powered by PHP8, CloudLinux, CloudFlare, BitNinja and DC
+                        DCI-Indonesia | Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud computing
+                        technology</p>
+                </div>
+
+                <div>
+                    <a href="#">Syarat dan Ketentuan</a> |
+                    <a href="#">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
