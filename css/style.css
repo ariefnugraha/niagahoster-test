@@ -190,6 +190,19 @@
 }
 
 /* --------- FONTS --------------------------*/
+/* ----------- DISPLAY --------------*/
+.d-block {
+  display: block !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-inline {
+  display: inline !important;
+}
+
 /* ----------- WIDTH -------------------*/
 .w-1110 {
   max-width: 1110px;
@@ -996,6 +1009,11 @@ header nav ul li .dropdown-1::before {
   letter-spacing: 0em;
 }
 
+.title-news {
+  font: normal normal 700 40px/56px "Nunito Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
 /* ------------------------ CARD CONTAINER ---------------- */
 .content-row-list {
   display: -webkit-box;
@@ -1531,6 +1549,7 @@ aside .sticky.absolute {
 }
 
 .detail-article figure {
+  max-width: 100%;
   margin: 36px 0;
   border-radius: 10px;
 }
@@ -1558,6 +1577,10 @@ aside .sticky.absolute {
   list-style: disc;
   -webkit-padding-start: 18px;
           padding-inline-start: 18px;
+}
+
+.detail-article article a {
+  color: #007dff;
 }
 
 /* --------------------- BUTTON LIKE SHARE COMMENT ----------- */

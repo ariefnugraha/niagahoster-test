@@ -315,6 +315,11 @@ $shadow-color-5: rgba(18, 18, 18, 0.12);
   letter-spacing: 0.04em;
 }
 
+/* ----------- DISPLAY --------------*/
+.d-block {display: block !important;}
+.d-inline-block {display: inline-block !important;}
+.d-inline {display: inline !important;}
+
 /* ----------- WIDTH -------------------*/
 .w-1110 {
   max-width: 1110px;
@@ -1002,6 +1007,10 @@ header {
   }
 }
 
+.title-news {
+  @include heading-2();
+}
+
 /* ------------------------ CARD CONTAINER ---------------- */
 .content-row-list {
   display: flex;
@@ -1455,6 +1464,7 @@ aside {
   }
 
   figure {
+    max-width: 100%;
     margin: 36px 0;
     border-radius: 10px;
 
@@ -1479,6 +1489,8 @@ aside {
       list-style: disc;
       padding-inline-start: 18px;
     }
+
+    a {color: $primary-blue-1;}
   }
 }
 
