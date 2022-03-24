@@ -315,10 +315,252 @@ $shadow-color-5: rgba(18, 18, 18, 0.12);
   letter-spacing: 0.04em;
 }
 
+.heading-1 {
+  font: normal normal 700 56px/64px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-2 {
+  font: normal normal 700 40px/56px "Nunito Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.heading-3 {
+  font: normal normal 700 32px/42px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-4 {
+  font: normal normal 700 28px/36px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.heading-5 {
+  font: normal normal 700 24px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.0025em;
+}
+
+.heading-6 {
+  font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.heading-7 {
+  font: normal normal 700 18px/27px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.heading-8 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.sub-1 {
+  font: normal normal 600 24px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-2 {
+  font: normal normal 600 20px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-3 {
+  font: normal normal 600 18px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-4 {
+  font: normal normal 600 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-5 {
+  font: normal normal 600 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.sub-6 {
+  font: normal normal 600 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-1 {
+  font: normal normal 400 20px/34px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-2 {
+  font: normal normal 400 18px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-3 {
+  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-4 {
+  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-5 {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.text-body-alt-16 {
+  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-body-alt-14 {
+  font: normal normal 400 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-body-alt-12 {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.text-caption-1 {
+  font: normal normal 400 14px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-caption-2 {
+  font: normal normal 400 12px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-overline {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* COLUMN WIDTH */
+.row {
+  width: calc(100% + 30px);
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+
+  & > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto {
+  position: relative;
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 56px;
+}
+
+.col-1 {
+  -ms-flex: calc(0.08333 - 30px);
+  flex: 0 0 calc(8.33333% - 30px);
+  max-width: calc(8.33333% - 30px);
+}
+
+.col-2 {
+  -ms-flex: calc(0.16667 - 30px);
+  flex: 0 0 calc(16.66667% - 30px);
+  max-width: calc(16.66667% - 30px);
+}
+
+.col-3 {
+  -ms-flex: calc(0.25 - 30px);
+  flex: 0 0 calc(25% - 30px);
+  max-width: calc(25% - 30px);
+}
+
+.col-4 {
+  -ms-flex: calc(0.33333 - 30px);
+  flex: 0 0 calc(33.33333% - 30px);
+  max-width: calc(33.33333% - 30px);
+}
+
+.col-5 {
+  -ms-flex: calc(0.41667 - 30px);
+  flex: 0 0 calc(41.66667% - 30px);
+  max-width: calc(41.66667% - 30px);
+}
+
+.col-6 {
+  -ms-flex: calc(0.5 - 30px);
+  flex: 0 0 calc(50% - 30px);
+  max-width: calc(50% - 30px);
+}
+
+.col-7 {
+  -ms-flex: calc(0.58333 - 30px);
+  flex: 0 0 calc(58.333% - 30px);
+  max-width: calc(58333% - 30px);
+}
+
+.col-8 {
+  -ms-flex: calc(0.66667 - 30px);
+  flex: 0 0 calc(66.667% - 30px);
+  max-width: calc(66667% - 30px);
+}
+
+.col-9 {
+  -ms-flex: calc(0.75 - 30px);
+  flex: 0 0 calc(75% - 30px);
+  max-width: calc(75% - 30px);
+}
+
+.col-10 {
+  -ms-flex: calc(0.83333 - 30px);
+  flex: 0 0 calc(83.33333% - 30px);
+  max-width: calc(83.33333% - 30px);
+}
+
+.col-11 {
+  -ms-flex: calc(0.91667 - 30px);
+  flex: 0 0 calc(91.66667% - 30px);
+  max-width: calc(91.66667% - 30px);
+}
+
+.col-12 {
+  -ms-flex: 1;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 /* ----------- DISPLAY --------------*/
-.d-block {display: block !important;}
-.d-inline-block {display: inline-block !important;}
-.d-inline {display: inline !important;}
+.d-block {
+  display: block !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-inline {
+  display: inline !important;
+}
 
 /* ----------- WIDTH -------------------*/
 .w-1110 {
@@ -888,7 +1130,6 @@ header {
 
   &.invitation {
     text-align: center;
-    margin: 80px 0 0 0;
     padding: 0;
     min-height: 400px;
   }
@@ -1011,13 +1252,6 @@ header {
   @include heading-2();
 }
 
-/* ------------------------ CARD CONTAINER ---------------- */
-.content-row-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -56px;
-}
-
 /* -------------------------- CARD ------------------------- */
 .content-list {
   display: flex;
@@ -1086,8 +1320,6 @@ header {
 }
 
 .content-row {
-  width: calc((100% / 3) - 30px);
-  margin-bottom: 56px;
   &:not(:nth-child(3n)) {
     margin-right: 30px;
   }
@@ -1324,9 +1556,9 @@ footer {
       padding: 16px 0;
       text-align: left;
 
-      // &.btn-large {
-      //   @include text-btn-1();
-      // }
+      &.btn-large {
+        @include heading-6();
+      }
 
       svg {
         transition: 0.3s;
@@ -1334,7 +1566,11 @@ footer {
     }
     .accordion-content {
       display: none;
-      padding-left: 16px;
+      padding-left: 0;
+
+      &.without-padding a {
+        padding-left: 0;
+      }
 
       &.show {
         display: block;
@@ -1350,7 +1586,8 @@ footer {
         }
 
         &.active {
-          @include heading-8();
+          font: normal normal 700 12px/24px "Nunito Sans", sans-serif;
+          letter-spacing: 0.02em;
           color: $primary-blue-1;
         }
       }
@@ -1490,7 +1727,9 @@ aside {
       padding-inline-start: 18px;
     }
 
-    a {color: $primary-blue-1;}
+    a {
+      color: $primary-blue-1;
+    }
   }
 }
 
@@ -1518,7 +1757,7 @@ aside {
       position: relative;
       padding-inline-start: 20px;
       &::before {
-        content: '';
+        content: "";
         width: 4px;
         height: 4px;
         background: $text-color-primary;
