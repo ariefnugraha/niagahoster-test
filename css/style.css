@@ -193,14 +193,14 @@
 /* ----------- WIDTH -------------------*/
 .w-1110 {
   max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.w-920 {
+  max-width: 920px;
 }
 
 .w-770 {
   max-width: 770px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .w-100 {
@@ -210,6 +210,11 @@
 /* -------------- MARGINS ------------------- */
 .cut-by-navbar {
   margin-top: 160px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .m-16 {
@@ -295,11 +300,11 @@
 }
 
 .ml-32 {
-  margin-left: 32px;
+  margin-left: 32px !important;
 }
 
 .mr-32 {
-  margin-right: 32px;
+  margin-right: 32px !important;
 }
 
 .mb-32 {
@@ -1123,58 +1128,6 @@ header nav ul li .dropdown-1::before {
   margin-top: 8px;
 }
 
-.content-row .content-row-footer {
-  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.005em;
-}
-
-.content-row .content-row-footer a {
-  padding: 2px 16px;
-}
-
-.content-row .content-row-footer span {
-  position: relative;
-  padding-left: 40px;
-}
-
-.content-row .content-row-footer span::before {
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: #29384e;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-/* ---------------------------- MORE BUTTON -------------------- */
-.more {
-  margin-top: 36px;
-  text-align: center;
-}
-
-.more a {
-  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-  padding: 12px 40px;
-  color: #007dff;
-  border-radius: 40px;
-}
-
-.more a:hover {
-  background: #f2f2f2;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.more a:active {
-  background: #ededed;
-}
-
 /* ------------------------ BANNER --------------------------*/
 .banner {
   display: -webkit-box;
@@ -1396,6 +1349,18 @@ footer .container .item .newsletter form input {
 }
 
 /* -------------- ACCORDION ---------------------*/
+.accordion.accordion-border {
+  border: solid 1px #e0e0e0;
+}
+
+.accordion.accordion-rounded {
+  border-radius: 10px;
+}
+
+.accordion.accordion-padding {
+  padding: 32px;
+}
+
 .accordion .accordion-title {
   font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
@@ -1413,6 +1378,7 @@ footer .container .item .newsletter form input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px 0;
+  text-align: left;
 }
 
 .accordion .accordion-item button svg {
@@ -1433,6 +1399,7 @@ footer .container .item .newsletter form input {
   font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
   display: block;
+  padding: 8px 16px;
   color: #29384e;
 }
 
@@ -1440,16 +1407,25 @@ footer .container .item .newsletter form input {
   margin-bottom: 8px;
 }
 
+.accordion .accordion-item .accordion-content a.active {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+  color: #007dff;
+}
+
+.accordion .accordion-item .accordion-content .accordion-subcontent {
+  padding: 0 16px;
+}
+
 /* ---------------- ASIDE --------------------- */
 aside {
   position: relative;
   width: calc(25% - 30px);
-  margin-left: 30px !important;
 }
 
 aside .sticky.scroll {
   position: fixed;
-  top: 180px;
+  top: 160px;
 }
 
 aside .sticky.absolute {
@@ -1473,7 +1449,7 @@ aside .sticky.absolute {
   color: #29384e;
 }
 
-.name-tag a:last-child {
+.name-tag a.name {
   margin-left: 12px;
 }
 
@@ -1489,5 +1465,160 @@ aside .sticky.absolute {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.name-tag .info {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+  position: relative;
+  padding-left: 20px;
+  color: #546071;
+}
+
+.name-tag .info::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #546071;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* ------------------ BREADCRUMB ------------------- */
+.breadcrumb a,
+.breadcrumb span {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+  display: inline-block;
+  position: relative;
+}
+
+.breadcrumb a:not(:first-child),
+.breadcrumb span:not(:first-child) {
+  padding-left: 20px;
+}
+
+.breadcrumb a:not(:first-child)::after,
+.breadcrumb span:not(:first-child)::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../assets/icons/next.svg");
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* -------------------- DETAIL ARTICLE ---------------*/
+.detail-article h1 {
+  font: normal normal 700 40px/56px "Nunito Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.detail-article h2,
+.detail-article h3 {
+  font: normal normal 700 28px/36px "Nunito Sans", sans-serif;
+  letter-spacing: 0em;
+}
+
+.detail-article figure {
+  margin: 36px 0;
+  border-radius: 10px;
+}
+
+.detail-article figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.detail-article article > *:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.detail-article article p {
+  font: normal normal 400 18px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.detail-article article ul {
+  font: normal normal 700 18px/27px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+  list-style: disc;
+  -webkit-padding-start: 18px;
+          padding-inline-start: 18px;
+}
+
+/* --------------------- BUTTON LIKE SHARE COMMENT ----------- */
+.like-share-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.like-share-comment button {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.like-share-comment button:not(:last-child) {
+  margin-right: 24px;
+}
+
+.like-share-comment button svg {
+  margin-right: 12px;
+}
+
+/* ---------------------- TAG -------------------------------- */
+.tag {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.tag.with-info span {
+  position: relative;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.tag.with-info span::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #29384e;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.tag a {
+  padding: 2px 16px;
+  background: #e0efff;
+  color: #007dff;
+}
+
+.tag a:hover {
+  color: #ffffff;
+  background-color: #e0efff;
 }
 /*# sourceMappingURL=style.css.map */

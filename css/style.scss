@@ -52,22 +52,6 @@ $shadow-color-3: rgba(18, 18, 18, 0.32);
 $shadow-color-4: rgba(18, 18, 18, 0.18);
 $shadow-color-5: rgba(18, 18, 18, 0.12);
 
-$btn-primary-color: #ff9800;
-$btn-hover-color: #f39100;
-$btn-pressed-color: #dd8400;
-$btn-disabled-color: #ececec;
-$btn-neutral-color: #ffffff;
-$btn-neutral-hover-color: #fff5e6;
-$btn-neutral-pressed-color: #ffeacc;
-$btn-danger-color: #f43636;
-$btn-danger-hover-color: #e13030;
-$btn-danger-pressed-color: #c92d2d;
-$btn-success-color: #00bfa6;
-$btn-success-hover-color: #00ad96;
-$btn-success-pressed-color: #019b86;
-$btn-text-hover-color: #f2f2f2;
-$btn-text-pressed-color: #ededed;
-
 .text-color-primary {
   color: $text-color-primary;
 }
@@ -316,36 +300,6 @@ $btn-text-pressed-color: #ededed;
   letter-spacing: 0em;
 }
 
-@mixin text-btn-1 {
-  font: normal normal 700 20px/32px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-@mixin text-btn-2 {
-  font: normal normal 700 18px/32px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-@mixin text-btn-3 {
-  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-@mixin text-btn-4 {
-  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-@mixin text-btn-5 {
-  font: normal normal 700 14px/16px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
-@mixin text-btn-6 {
-  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
-  letter-spacing: 0.02em;
-}
-
 @mixin text-caption-1 {
   font: normal normal 400 14px/16px "Nunito Sans", sans-serif;
   letter-spacing: 0.02em;
@@ -364,14 +318,14 @@ $btn-text-pressed-color: #ededed;
 /* ----------- WIDTH -------------------*/
 .w-1110 {
   max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.w-920 {
+  max-width: 920px;
 }
 
 .w-770 {
   max-width: 770px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .w-100 {
@@ -381,6 +335,11 @@ $btn-text-pressed-color: #ededed;
 /* -------------- MARGINS ------------------- */
 .cut-by-navbar {
   margin-top: 160px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .m-16 {
@@ -459,10 +418,10 @@ $btn-text-pressed-color: #ededed;
   margin-top: 32px;
 }
 .ml-32 {
-  margin-left: 32px;
+  margin-left: 32px !important;
 }
 .mr-32 {
-  margin-right: 32px;
+  margin-right: 32px !important;
 }
 .mb-32 {
   margin-bottom: 32px;
@@ -870,7 +829,7 @@ header {
       }
 
       .login:hover {
-        background: $btn-primary-color;
+        background: #ff9800;
       }
     }
   }
@@ -1153,51 +1112,6 @@ header {
       margin-top: 8px;
     }
   }
-
-  .content-row-footer {
-    @include text-body-5();
-    a {
-      padding: 2px 16px;
-    }
-
-    span {
-      position: relative;
-      padding-left: 40px;
-
-      &::before {
-        content: "";
-        width: 4px;
-        height: 4px;
-        background: $text-color-primary;
-        border-radius: 50%;
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 20px;
-        transform: translateY(-50%);
-      }
-    }
-  }
-}
-
-/* ---------------------------- MORE BUTTON -------------------- */
-.more {
-  margin-top: 36px;
-  text-align: center;
-  a {
-    @include text-btn-4();
-    padding: 12px 40px;
-    color: $primary-blue-1;
-    border-radius: 40px;
-    &:hover {
-      background: $btn-text-hover-color;
-      transition: 0.5s;
-    }
-
-    &:active {
-      background: $btn-text-pressed-color;
-    }
-  }
 }
 
 /* ------------------------ BANNER --------------------------*/
@@ -1375,6 +1289,18 @@ footer {
 
 /* -------------- ACCORDION ---------------------*/
 .accordion {
+  &.accordion-border {
+    border: solid 1px $divider-gray;
+  }
+
+  &.accordion-rounded {
+    border-radius: 10px;
+  }
+
+  &.accordion-padding {
+    padding: 32px;
+  }
+
   .accordion-title {
     @include heading-6();
     margin-bottom: 24px;
@@ -1387,6 +1313,11 @@ footer {
       display: flex;
       justify-content: space-between;
       padding: 16px 0;
+      text-align: left;
+
+      // &.btn-large {
+      //   @include text-btn-1();
+      // }
 
       svg {
         transition: 0.3s;
@@ -1403,10 +1334,20 @@ footer {
       a {
         @include text-body-5();
         display: block;
+        padding: 8px 16px;
         color: $text-color-primary;
         &:not(:last-child) {
           margin-bottom: 8px;
         }
+
+        &.active {
+          @include heading-8();
+          color: $primary-blue-1;
+        }
+      }
+
+      .accordion-subcontent {
+        padding: 0 16px;
       }
     }
   }
@@ -1416,12 +1357,11 @@ footer {
 aside {
   position: relative;
   width: calc(25% - 30px);
-  margin-left: 30px !important;
 
   .sticky {
     &.scroll {
       position: fixed;
-      top: 180px;
+      top: 160px;
     }
 
     &.absolute {
@@ -1435,10 +1375,11 @@ aside {
 .name-tag {
   display: flex;
   align-items: center;
+
   a {
     @include text-body-5();
     color: $text-color-primary;
-    &:last-child {
+    &.name {
       margin-left: 12px;
     }
 
@@ -1452,6 +1393,143 @@ aside {
         border-radius: 50%;
         object-fit: cover;
       }
+    }
+  }
+
+  .info {
+    @include text-body-5();
+    position: relative;
+    padding-left: 20px;
+    color: $text-color-secondary-1;
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: $text-color-secondary-1;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/* ------------------ BREADCRUMB ------------------- */
+.breadcrumb {
+  a,
+  span {
+    @include text-body-5();
+    display: inline-block;
+    position: relative;
+
+    &:not(:first-child) {
+      padding-left: 20px;
+      &::after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url("../assets/icons/next.svg");
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+/* -------------------- DETAIL ARTICLE ---------------*/
+.detail-article {
+  h1 {
+    @include heading-2();
+  }
+
+  h2,
+  h3 {
+    @include heading-4();
+  }
+
+  figure {
+    margin: 36px 0;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  article {
+    & > *:not(:last-child) {
+      margin-bottom: 36px;
+    }
+    p {
+      @include text-body-2();
+    }
+
+    ul {
+      @include heading-7();
+      list-style: disc;
+      padding-inline-start: 18px;
+    }
+  }
+}
+
+/* --------------------- BUTTON LIKE SHARE COMMENT ----------- */
+.like-share-comment {
+  display: flex;
+  button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    svg {
+      margin-right: 12px;
+    }
+  }
+}
+
+/* ---------------------- TAG -------------------------------- */
+.tag {
+  &.with-info {
+    span {
+      position: relative;
+      padding-inline-start: 20px;
+      &::before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: $text-color-primary;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @include text-body-5();
+
+  a {
+    padding: 2px 16px;
+    background: $primary-blue-3;
+    color: $primary-blue-1;
+
+    &:hover {
+      color: $white;
+      background-color: $primary-blue-3;
     }
   }
 }
