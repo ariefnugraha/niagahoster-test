@@ -1,16 +1,104 @@
 @import "./colors";
 @import "./fonts";
 
-button, a {
-    
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+@mixin text-btn-1 {
+  font: normal normal 700 20px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-btn-2 {
+  font: normal normal 700 18px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-btn-3 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-btn-4 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-btn-5 {
+  font: normal normal 700 14px/16px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-btn-6 {
+  font: normal normal 700 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+$btn-primary-color: #ff9800;
+$btn-hover-color: #f39100;
+$btn-pressed-color: #dd8400;
+$btn-disabled-color: #ececec;
+$btn-neutral-color: #ffffff;
+$btn-neutral-hover-color: #fff5e6;
+$btn-neutral-pressed-color: #ffeacc;
+$btn-danger-color: #f43636;
+$btn-danger-hover-color: #e13030;
+$btn-danger-pressed-color: #c92d2d;
+$btn-success-color: #00bfa6;
+$btn-success-hover-color: #00ad96;
+$btn-success-pressed-color: #019b86;
+$btn-text-hover-color: #f2f2f2;
+$btn-text-pressed-color: #ededed;
+
+// BUTTONS
+button,
+a {
   &.btn {
     all: unset;
-    text-align: center;
-    display: inline-block;
     cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+  }
 
-    &:hover {
-      transition: 0.5s;
+  // BTN TYPE
+  &.btn-secondary {
+    border-width: 1px;
+    border-style: solid;
+
+    &.primary {
+      color: $btn-primary-color;
+      border-color: $btn-primary-color;
+
+      &:focus {
+        box-shadow: 0px 8px 10px rgba($color: $btn-primary-color, $alpha: 0.32);
+      }
+    }
+
+    &.disabled {
+      color: $btn-disabled-color;
+      border-color: $btn-disabled-color;
+    }
+
+    &.destructive {
+      color: $btn-danger-color;
+      border-color: $btn-danger-color;
+    }
+
+    &.success {
+      color: $btn-success-color;
+      border-color: $btn-success-color;
+    }
+  }
+
+  &.btn-text {
+    background: transparent;
+
+    &:focus {
+      border: 1px solid $btn-disabled-color;
+    }
+
+    &.disabled {
+      background: $btn-disabled-color;
+      color: #a9afb8;
     }
   }
 
@@ -18,67 +106,66 @@ button, a {
     border-radius: 40px;
   }
 
-  // BTN ICON
-  &.icon-left {
-      display: flex;
-      justify-content: space-between;
-
-      svg {flex-shrink: 1}
-  }
-
   // BTN SIZE
   &.btn-lg {
-    @include text-btn-1;
+    @include text-btn-1();
     padding: 12px 64px;
-  }
 
-  &.btn-lg-fixed {
-    @include text-btn-1;
-    width: 280px;
-    height: 50px;
-    padding: 12px 0;
+    &.fixed {
+      width: 280px;
+      height: 56px;
+    }
   }
 
   &.btn-md {
-    @include text-btn-3;
+    @include text-btn-3();
     padding: 12px 40px;
-  }
 
-  &.btn-md-fixed {
-    @include text-btn-3;
-    width: 280px;
-    height: 48px;
-    padding: 12px 0;
+    &.fixed {
+      width: 280px;
+      height: 48px;
+    }
   }
 
   &.btn-sm {
-    @include text-btn-6;
+    @include text-btn-5();
     padding: 12px 24px;
   }
 
-  // BTN COLORS
-  &.btn-primary {
+  // BTN COLOR
+  &.btn-primary-color {
     background: $btn-primary-color;
     box-shadow: 0px 4px 6px rgba($color: $btn-primary-color, $alpha: 0.24);
 
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 8px 10px rgba($color: $btn-primary-color, $alpha: 0.24);
+    }
+
     &:hover {
       background: $btn-hover-color;
-      box-shadow: 0px 8px 10px rgba($color: $btn-hover-color, $alpha: 0.32);
     }
 
     &:active {
       background: $btn-pressed-color;
-      box-shadow: 0px 8px 10px rgba($color: $btn-hover-color, $alpha: 0.32);
     }
   }
 
-  &.btn-disabled {
+  &.btn-disabled-color {
     background: $btn-disabled-color;
     box-shadow: 0px 4px 6px rgba($color: $btn-disabled-color, $alpha: 0.24);
   }
 
-  &.btn-neutral {
+  &.btn-neutral-color {
     background: $btn-neutral-color;
+    box-shadow: 0px 4px 6px rgba(255, 176, 77, 0.24);
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 8px 10px rgba($color: $btn-neutral-color, $alpha: 1);
+    }
 
     &:hover {
       background: $btn-neutral-hover-color;
@@ -86,59 +173,58 @@ button, a {
 
     &:active {
       background: $btn-neutral-pressed-color;
-      box-shadow: 0px 8px 10px rgba($color: $btn-hover-color, $alpha: 0.32);
     }
   }
 
-  &.btn-danger {
+  &.btn-descructive-color {
     background: $btn-danger-color;
     box-shadow: 0px 4px 6px rgba($color: $btn-danger-color, $alpha: 0.24);
 
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 8px 10px rgba($color: $btn-danger-color, $alpha: 0.24);
+    }
+
     &:hover {
       background: $btn-danger-hover-color;
-      box-shadow: 0px 8px 10px
-        rgba($color: $btn-danger-hover-color, $alpha: 0.32);
     }
 
     &:active {
       background: $btn-danger-pressed-color;
-      box-shadow: 0px 8px 10px
-        rgba($color: $btn-danger-pressed-color, $alpha: 0.32);
     }
   }
 
-  &.btn-success {
+  &.btn-success-color {
     background: $btn-success-color;
-    box-shadow: 0px 4px 6px rgba($color: $btn-success-color, $alpha: 0.24);
+    box-shadow: 0 4px 6px rgba($color: $btn-success-color, $alpha: 0.24);
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0 8px 10px rgba($color: $btn-success-color, $alpha: 0.24);
+    }
 
     &:hover {
       background: $btn-success-hover-color;
-      box-shadow: 0px 8px 10px
-        rgba($color: $btn-success-hover-color, $alpha: 0.32);
     }
-
     &:active {
       background: $btn-success-pressed-color;
-      box-shadow: 0px 8px 10px
-        rgba($color: $btn-success-pressed-color, $alpha: 0.32);
     }
   }
 
-  &.btn-text {
-    &:hover {
-      background: $btn-text-hover-color;
-      box-shadow: 0px 8px 10px rgba($color: $btn-text-hover-color, $alpha: 0.32);
-    }
-
-    &:active {
-      background: $btn-text-pressed-color;
-      box-shadow: 0px 8px 10px rgba($color: $btn-text-hover-color, $alpha: 0.32);
-    }
+  // BTN WITH ICON
+  .with-icon-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  // BTN BORDER
-  &.btn-border {
-      border-width: 1px;
-      border-style: solid;
+  .with-icon-left .icon {
+    float: left;
+  }
+
+  .with-icon-right .icon {
+    float: right;
   }
 }
