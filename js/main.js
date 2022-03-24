@@ -29,10 +29,10 @@ document.querySelectorAll('.accordion .accordion-item').forEach(item => {
     item.querySelector('button').addEventListener('click', (e) => {
         let btn = e.target;
         if (item.querySelector('.accordion-content').classList.contains('show')) {
-            item.querySelector('.accordion-content').classList.remove('show');
+            item.querySelectorAll('.accordion-content').forEach(content => content.classList.remove('show'));
             btn.querySelector('svg').style.transform = 'unset';
         } else {
-            item.querySelector('.accordion-content').classList.add('show');
+            item.querySelectorAll('.accordion-content').forEach(content => content.classList.add('show'));
             btn.querySelector('svg').style.transform = 'rotate(180deg)';
         }
     })
