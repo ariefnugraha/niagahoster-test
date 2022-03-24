@@ -8,6 +8,11 @@ a.btn {
   text-align: center;
 }
 
+button.btn-fill,
+a.btn-fill {
+  color: #ffffff !important;
+}
+
 button.btn-secondary,
 a.btn-secondary {
   border-width: 1px;

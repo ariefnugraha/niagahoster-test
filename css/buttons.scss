@@ -59,6 +59,10 @@ a {
     text-align: center;
   }
 
+  &.btn-fill {
+    color: $btn-neutral-color !important;
+  }
+
   // BTN TYPE
   &.btn-secondary {
     border-width: 1px;
