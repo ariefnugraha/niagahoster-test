@@ -161,9 +161,9 @@ $shadow-color-5: rgba(18, 18, 18, 0.12);
 }
 
 /* ---------------------- CONTAINER ----------------------------*/
-.main-container {
-  width: 75%;
-}
+// .main-container {
+//   width: 75%;
+// }
 
 /* ------------------------ FLEX --------------------------------*/
 .flex {
@@ -782,6 +782,12 @@ $shadow-color-5: rgba(18, 18, 18, 0.12);
   margin-bottom: 80px;
 }
 
+/* -------------- PADDING ------------- */
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 /* -------------- TEXT ALIGN -------------- */
 .text-left {
   text-align: left;
@@ -1125,7 +1131,6 @@ header {
   background-size: cover;
   min-height: 626px;
   padding: 96px 0 0 0;
-  margin-bottom: 80px;
   color: $white;
 
   &.invitation {
@@ -1359,6 +1364,7 @@ header {
 .banner {
   display: flex;
   align-items: center;
+  justify-content: center;
   background: $misc-gradient-blue-1;
   color: $white;
   padding: 36px;
@@ -1602,7 +1608,7 @@ footer {
 /* ---------------- ASIDE --------------------- */
 aside {
   position: relative;
-  width: calc(25% - 30px);
+  // width: calc(25% - 30px);
 
   .sticky {
     &.scroll {
@@ -1665,6 +1671,9 @@ aside {
 
 /* ------------------ BREADCRUMB ------------------- */
 .breadcrumb {
+  a {
+    color: $primary-blue-1;
+  }
   a,
   span {
     @include text-body-5();
@@ -1740,6 +1749,32 @@ aside {
     all: unset;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      svg path {fill: $text-color-secondary-1}
+    }
+
+    &:focus {
+      svg path {fill: $primary-blue-1;}
+    }
+
+    &.small {
+      @include text-body-5();
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &.big {
+      @include text-body-1();
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
     &:not(:last-child) {
       margin-right: 24px;
     }

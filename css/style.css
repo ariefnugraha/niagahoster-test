@@ -141,10 +141,6 @@
 }
 
 /* ---------------------- CONTAINER ----------------------------*/
-.main-container {
-  width: 75%;
-}
-
 /* ------------------------ FLEX --------------------------------*/
 .flex {
   display: -webkit-box;
@@ -695,6 +691,12 @@
   margin-bottom: 80px;
 }
 
+/* -------------- PADDING ------------- */
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 /* -------------- TEXT ALIGN -------------- */
 .text-left {
   text-align: left;
@@ -1097,7 +1099,6 @@ header nav ul li .dropdown-1::before {
   background-size: cover;
   min-height: 626px;
   padding: 96px 0 0 0;
-  margin-bottom: 80px;
   color: #ffffff;
 }
 
@@ -1389,6 +1390,9 @@ header nav ul li .dropdown-1::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: linear-gradient(249.77deg, #0094ff -1.99%, #007dff 43.52%, #026ce8 95.86%);
   color: #ffffff;
   padding: 36px;
@@ -1682,7 +1686,6 @@ footer .container .item .newsletter form input {
 /* ---------------- ASIDE --------------------- */
 aside {
   position: relative;
-  width: calc(25% - 30px);
 }
 
 aside .sticky.scroll {
@@ -1752,6 +1755,10 @@ aside .sticky.absolute {
 }
 
 /* ------------------ BREADCRUMB ------------------- */
+.breadcrumb a {
+  color: #007dff;
+}
+
 .breadcrumb a,
 .breadcrumb span {
   font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
@@ -1842,6 +1849,35 @@ aside .sticky.absolute {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+
+.like-share-comment button:hover svg path {
+  fill: #546071;
+}
+
+.like-share-comment button:focus svg path {
+  fill: #007dff;
+}
+
+.like-share-comment button.small {
+  font: normal normal 400 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.like-share-comment button.small svg {
+  width: 24px;
+  height: 24px;
+}
+
+.like-share-comment button.big {
+  font: normal normal 400 20px/34px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.like-share-comment button.big svg {
+  width: 36px;
+  height: 36px;
 }
 
 .like-share-comment button:not(:last-child) {
