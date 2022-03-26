@@ -482,73 +482,61 @@ $shadow-color-5: rgba(18, 18, 18, 0.12);
 }
 
 .col-1 {
-  -ms-flex: calc(0.08333 - 30px);
   flex: 0 0 calc(8.33333% - 30px);
   max-width: calc(8.33333% - 30px);
 }
 
 .col-2 {
-  -ms-flex: calc(0.16667 - 30px);
   flex: 0 0 calc(16.66667% - 30px);
   max-width: calc(16.66667% - 30px);
 }
 
 .col-3 {
-  -ms-flex: calc(0.25 - 30px);
   flex: 0 0 calc(25% - 30px);
   max-width: calc(25% - 30px);
 }
 
 .col-4 {
-  -ms-flex: calc(0.33333 - 30px);
   flex: 0 0 calc(33.33333% - 30px);
   max-width: calc(33.33333% - 30px);
 }
 
 .col-5 {
-  -ms-flex: calc(0.41667 - 30px);
   flex: 0 0 calc(41.66667% - 30px);
   max-width: calc(41.66667% - 30px);
 }
 
 .col-6 {
-  -ms-flex: calc(0.5 - 30px);
   flex: 0 0 calc(50% - 30px);
   max-width: calc(50% - 30px);
 }
 
 .col-7 {
-  -ms-flex: calc(0.58333 - 30px);
   flex: 0 0 calc(58.333% - 30px);
   max-width: calc(58333% - 30px);
 }
 
 .col-8 {
-  -ms-flex: calc(0.66667 - 30px);
   flex: 0 0 calc(66.667% - 30px);
   max-width: calc(66667% - 30px);
 }
 
 .col-9 {
-  -ms-flex: calc(0.75 - 30px);
   flex: 0 0 calc(75% - 30px);
   max-width: calc(75% - 30px);
 }
 
 .col-10 {
-  -ms-flex: calc(0.83333 - 30px);
   flex: 0 0 calc(83.33333% - 30px);
   max-width: calc(83.33333% - 30px);
 }
 
 .col-11 {
-  -ms-flex: calc(0.91667 - 30px);
   flex: 0 0 calc(91.66667% - 30px);
   max-width: calc(91.66667% - 30px);
 }
 
 .col-12 {
-  -ms-flex: 1;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -1161,6 +1149,33 @@ header {
       height: 77px;
       overflow: hidden;
 
+      @-webkit-keyframes show {
+        0% {
+          margin-top: -270px;
+        }
+        5% {
+          margin-top: -180px;
+        }
+        33% {
+          margin-top: -180px;
+        }
+        38% {
+          margin-top: -90px;
+        }
+        66% {
+          margin-top: -90px;
+        }
+        71% {
+          margin-top: 0px;
+        }
+        99.99% {
+          margin-top: 0px;
+        }
+        100% {
+          margin-top: -270px;
+        }
+      }
+
       @keyframes show {
         0% {
           margin-top: -270px;
@@ -1189,7 +1204,8 @@ header {
       }
 
       div {
-        animation: show 5s linear infinite;
+        -webkit-animation: show 5s linear infinite;
+                animation: show 5s linear infinite;
         span {
           display: inline-block;
           margin-bottom: 65px;
@@ -1215,7 +1231,35 @@ header {
     }
 
     #flip div:first-child {
-      animation: show 5s linear infinite;
+      -webkit-animation: show 5s linear infinite;
+              animation: show 5s linear infinite;
+    }
+
+    @-webkit-keyframes show {
+      0% {
+        margin-top: -270px;
+      }
+      5% {
+        margin-top: -180px;
+      }
+      33% {
+        margin-top: -180px;
+      }
+      38% {
+        margin-top: -90px;
+      }
+      66% {
+        margin-top: -90px;
+      }
+      71% {
+        margin-top: 0px;
+      }
+      99.99% {
+        margin-top: 0px;
+      }
+      100% {
+        margin-top: -270px;
+      }
     }
 
     @keyframes show {
@@ -1329,7 +1373,8 @@ header {
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       border-radius: 5px;
     }
   }
@@ -1352,7 +1397,8 @@ header {
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       border-radius: 5px;
     }
   }
@@ -1660,7 +1706,8 @@ aside {
         }
 
         span {
-          padding-inline-start: 20px;
+          -webkit-padding-start: 20px;
+                  padding-inline-start: 20px;
           @include sub-6();
           color: $primary-blue-1;
           position: relative;
@@ -1705,7 +1752,8 @@ aside {
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
       }
     }
   }
@@ -1779,7 +1827,8 @@ aside {
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       border-radius: 10px;
     }
   }
@@ -1795,7 +1844,8 @@ aside {
     ul {
       @include heading-7();
       list-style: disc;
-      padding-inline-start: 18px;
+      -webkit-padding-start: 18px;
+              padding-inline-start: 18px;
     }
 
     a {
@@ -1858,7 +1908,8 @@ aside {
   &.with-info {
     span {
       position: relative;
-      padding-inline-start: 20px;
+      -webkit-padding-start: 20px;
+              padding-inline-start: 20px;
       &::before {
         content: "";
         width: 4px;
