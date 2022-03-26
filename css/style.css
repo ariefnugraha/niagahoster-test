@@ -974,7 +974,6 @@ header {
   left: 0;
   right: 0;
   color: #ffffff;
-  background: #007dff;
   z-index: 999;
 }
 
@@ -2009,7 +2008,7 @@ aside .sticky.absolute {
 
 .tag a:hover {
   color: #ffffff;
-  background-color: #e0efff;
+  background-color: #007dff;
 }
 
 /*----------------------- MODAL ------------------------------- */

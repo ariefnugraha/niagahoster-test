@@ -1039,7 +1039,6 @@ header {
   left: 0;
   right: 0;
   color: $white;
-  background: $primary-blue-1;
   z-index: 999;
 
   .main-header {
@@ -1863,6 +1862,8 @@ aside {
 
 /* ---------------------- TAG -------------------------------- */
 .tag {
+ 
+
   &.with-info {
     span {
       position: relative;
@@ -1891,7 +1892,7 @@ aside {
 
     &:hover {
       color: $white;
-      background-color: $primary-blue-3;
+      background-color: $primary-blue-1;
     }
   }
 }
