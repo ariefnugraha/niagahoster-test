@@ -95,7 +95,7 @@ a {
 
   &.btn-text {
     background: transparent;
-
+    color: #007AFF;
     &:focus {
       border: 1px solid $btn-disabled-color;
     }
@@ -140,7 +140,7 @@ a {
   &.btn-primary-color {
     background: $btn-primary-color;
     box-shadow: 0px 4px 6px rgba($color: $btn-primary-color, $alpha: 0.24);
-
+    color: $btn-neutral-color;
     &:hover,
     &:active,
     &:focus {
@@ -183,7 +183,7 @@ a {
   &.btn-descructive-color {
     background: $btn-danger-color;
     box-shadow: 0px 4px 6px rgba($color: $btn-danger-color, $alpha: 0.24);
-
+    color: $btn-neutral-color;
     &:hover,
     &:active,
     &:focus {
@@ -202,7 +202,7 @@ a {
   &.btn-success-color {
     background: $btn-success-color;
     box-shadow: 0 4px 6px rgba($color: $btn-success-color, $alpha: 0.24);
-
+    color: $btn-neutral-color;
     &:hover,
     &:active,
     &:focus {
@@ -218,17 +218,19 @@ a {
   }
 
   // BTN WITH ICON
-  .with-icon-side {
+  &.with-icon-side {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & > * {margin-right: 12px;}
   }
 
-  .with-icon-left .icon {
+  &.with-icon-left .icon {
     float: left;
   }
 
-  .with-icon-right .icon {
+  &.with-icon-right .icon {
     float: right;
   }
 }
