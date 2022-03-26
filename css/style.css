@@ -179,6 +179,12 @@
           justify-content: space-between;
 }
 
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -715,25 +721,36 @@ form {
   position: relative;
 }
 
-input {
+form label {
+  font: normal normal 600 14px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+input,
+textarea {
   all: unset;
   background: #ffffff;
   color: #29384e;
   padding: 12px 32px;
-  border: solid 1px #e0e0e0;
+  border: solid 2px #e0e0e0;
+  border-radius: 14px;
+  resize: vertical;
 }
 
-input:focus {
-  border: solid 1px #007dff;
+input:focus,
+textarea:focus {
+  border-color: #007dff;
 }
 
-input[type="search"] {
+input[type="search"],
+textarea[type="search"] {
   display: inline-block;
   position: relative;
   padding: 12px 68px 12px 32px;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button,
+textarea[type="search"]::-webkit-search-cancel-button {
   position: relative;
   right: -4px;
   -webkit-appearance: none;
@@ -743,7 +760,8 @@ input[type="search"]::-webkit-search-cancel-button {
   background: url("../assets/icons/close-circle.svg") no-repeat;
 }
 
-input[type="search"] ~ button {
+input[type="search"] ~ button,
+textarea[type="search"] ~ button {
   all: unset;
   position: absolute;
   top: 56%;
@@ -752,7 +770,8 @@ input[type="search"] ~ button {
           transform: translateY(-50%);
 }
 
-input.input-rounded {
+input.input-rounded,
+textarea.input-rounded {
   border-radius: 40px;
 }
 
@@ -872,6 +891,7 @@ body {
   font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
   letter-spacing: 0.005em;
   margin: 0;
+  color: #29384e;
 }
 
 body header.homepage {
@@ -1688,6 +1708,16 @@ aside {
   position: relative;
 }
 
+aside .sticky.sidebar-article {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+aside .sticky.sidebar-article.show {
+  opacity: 1;
+}
+
 aside .sticky.scroll {
   position: fixed;
   top: 160px;
@@ -1706,6 +1736,61 @@ aside .sticky.absolute {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.name-tag.big a {
+  font: normal normal 400 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.name-tag.big a figure {
+  width: 40px;
+  height: 40px;
+}
+
+.name-tag.big div {
+  margin-left: 12px;
+}
+
+.name-tag.big div .author {
+  margin-left: 0;
+}
+
+.name-tag.big div .author a {
+  font: normal normal 600 16px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.name-tag.big div .author span {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+  font: normal normal 600 12px/24px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+  color: #007dff;
+  position: relative;
+}
+
+.name-tag.big div .author span::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #29384e;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+}
+
+.name-tag.big div .info {
+  padding-left: 0;
+  color: #a9afb8;
+}
+
+.name-tag.big div .info::before {
+  display: none;
 }
 
 .name-tag a {
@@ -1884,7 +1969,9 @@ aside .sticky.absolute {
   margin-right: 24px;
 }
 
+.like-share-comment button i,
 .like-share-comment button svg {
+  display: block;
   margin-right: 12px;
 }
 
@@ -1923,5 +2010,222 @@ aside .sticky.absolute {
 .tag a:hover {
   color: #ffffff;
   background-color: #e0efff;
+}
+
+/*----------------------- MODAL ------------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal.show {
+  display: block;
+}
+
+/* ---------------------- REPLY BOX ---------------------- */
+.comment-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 355px;
+  padding: 36px 0;
+  background: #ffffff;
+  -webkit-box-shadow: -8px 0px 32px rgba(0, 87, 178, 0.16);
+          box-shadow: -8px 0px 32px rgba(0, 87, 178, 0.16);
+  opacity: 0;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  overflow-y: auto;
+}
+
+.comment-box.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.comment-box > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.comment-box .comment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+}
+
+.comment-box .comment-header div {
+  font: normal normal 700 20px/26px "Nunito Sans", sans-serif;
+  letter-spacing: 0.005em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-box .comment-header div > * {
+  margin-right: 12px;
+}
+
+.comment-box .comment-header div span {
+  display: block;
+  color: #007dff;
+}
+
+.comment-box .comment-form {
+  padding: 0 30px 24px 30px;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.comment-box .comment-form textarea {
+  min-height: 142px;
+}
+
+.comment-box .comment-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 30px;
+  min-height: 768px;
+}
+
+.comment-box .comment-list > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.comment-box .comment-list .comment-item,
+.comment-box .comment-list .repyl-item {
+  padding-bottom: 24px;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.comment-box .comment-list .comment-item > *:not(:last-child),
+.comment-box .comment-list .repyl-item > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.comment-box .comment-list .comment-item p a,
+.comment-box .comment-list .repyl-item p a {
+  color: #007dff;
+}
+
+.comment-box .comment-list .comment-item .comment-footer,
+.comment-box .comment-list .repyl-item .comment-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.comment-box .comment-list .comment-item .comment-footer .buttons,
+.comment-box .comment-list .repyl-item .comment-footer .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-box .comment-list .comment-item .comment-footer .buttons > *:not(:last-child),
+.comment-box .comment-list .repyl-item .comment-footer .buttons > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.comment-box .comment-list .comment-item .comment-footer .buttons button,
+.comment-box .comment-list .repyl-item .comment-footer .buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-box .comment-list .comment-item .comment-footer .buttons button:hover i,
+.comment-box .comment-list .repyl-item .comment-footer .buttons button:hover i {
+  color: #546071;
+}
+
+.comment-box .comment-list .comment-item .comment-footer .buttons button:focus i,
+.comment-box .comment-list .repyl-item .comment-footer .buttons button:focus i {
+  color: #007dff;
+}
+
+.comment-box .comment-list .comment-item .comment-footer span,
+.comment-box .comment-list .repyl-item .comment-footer span {
+  display: none;
+}
+
+.comment-box .comment-list .comment-item .comment-footer span.show,
+.comment-box .comment-list .repyl-item .comment-footer span.show {
+  display: block;
+}
+
+.comment-box .comment-list .comment-item .reply-child,
+.comment-box .comment-list .repyl-item .reply-child {
+  display: none;
+  margin-top: 24px;
+}
+
+.comment-box .comment-list .comment-item .reply-child.show,
+.comment-box .comment-list .repyl-item .reply-child.show {
+  display: block;
+}
+
+.comment-box .comment-list .comment-item .reply-child .reply-item,
+.comment-box .comment-list .repyl-item .reply-child .reply-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-box .comment-list .comment-item .reply-child .reply-item .line,
+.comment-box .comment-list .repyl-item .reply-child .reply-item .line {
+  width: 2px;
+  background: #007dff;
+  border: solid 1px #007dff;
+  position: relative;
+  left: 8px;
+}
+
+.comment-box .comment-list .comment-item .reply-child .reply-item .content,
+.comment-box .comment-list .repyl-item .reply-child .reply-item .content {
+  width: 100%;
+  margin-left: 24px;
+  word-break: break-all;
+}
+
+.comment-box .comment-list .comment-item .reply-child .reply-item .content > *:not(:last-child),
+.comment-box .comment-list .repyl-item .reply-child .reply-item .content > *:not(:last-child) {
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=style.css.map */

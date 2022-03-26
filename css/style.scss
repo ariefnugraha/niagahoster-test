@@ -184,6 +184,9 @@ $shadow-color-5: rgba(18, 18, 18, 0.12);
 .justify-between {
   justify-content: space-between;
 }
+.justify-end {
+  justify-content: flex-end;
+}
 .items-center {
   align-items: center;
 }
@@ -802,15 +805,24 @@ $shadow-color-5: rgba(18, 18, 18, 0.12);
 /* ---------------- INPUT ----------------- */
 form {
   position: relative;
+
+  label {
+    @include sub-5();
+  }
 }
-input {
+
+input,
+textarea {
   all: unset;
   background: $white;
   color: $text-color-primary;
   padding: 12px 32px;
-  border: solid 1px $divider-gray;
+  border: solid 2px $divider-gray;
+  border-radius: 14px;
+  resize: vertical;
+
   &:focus {
-    border: solid 1px $primary-blue-1;
+    border-color: $primary-blue-1;
   }
 
   &[type="search"] {
@@ -953,6 +965,7 @@ section {
 body {
   @include text-body-3();
   margin: 0;
+  color: $text-color-primary;
 
   header.homepage {
     background: transparent;
@@ -1608,9 +1621,17 @@ footer {
 /* ---------------- ASIDE --------------------- */
 aside {
   position: relative;
-  // width: calc(25% - 30px);
 
   .sticky {
+    &.sidebar-article {
+      opacity: 0;
+      transition: 0.5s;
+
+      &.show {
+        opacity: 1;
+      }
+    }
+
     &.scroll {
       position: fixed;
       top: 160px;
@@ -1627,6 +1648,55 @@ aside {
 .name-tag {
   display: flex;
   align-items: center;
+
+  &.big {
+    a {
+      @include text-body-3();
+      figure {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    div {
+      margin-left: 12px;
+
+      .author {
+        margin-left: 0;
+        a {
+          @include sub-4();
+        }
+
+        span {
+          padding-inline-start: 20px;
+          @include sub-6();
+          color: $primary-blue-1;
+          position: relative;
+
+          &::before {
+            content: "";
+            width: 4px;
+            height: 4px;
+            background: $text-color-primary;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 8px;
+            transform: translate(-50%, -50%);
+            display: block;
+          }
+        }
+      }
+
+      .info {
+        padding-left: 0;
+        color: $text-color-secondary-2;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
 
   a {
     @include text-body-5();
@@ -1752,11 +1822,15 @@ aside {
     cursor: pointer;
 
     &:hover {
-      svg path {fill: $text-color-secondary-1}
+      svg path {
+        fill: $text-color-secondary-1;
+      }
     }
 
     &:focus {
-      svg path {fill: $primary-blue-1;}
+      svg path {
+        fill: $primary-blue-1;
+      }
     }
 
     &.small {
@@ -1779,7 +1853,9 @@ aside {
       margin-right: 24px;
     }
 
+    i,
     svg {
+      display: block;
       margin-right: 12px;
     }
   }
@@ -1816,6 +1892,165 @@ aside {
     &:hover {
       color: $white;
       background-color: $primary-blue-3;
+    }
+  }
+}
+
+/*----------------------- MODAL ------------------------------- */
+.modal {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($color: #000, $alpha: 0.5);
+  z-index: 999;
+}
+
+/* ---------------------- REPLY BOX ---------------------- */
+.comment-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 355px;
+  padding: 36px 0;
+  background: $white;
+  box-shadow: -8px 0px 32px rgba(0, 87, 178, 0.16);
+  opacity: 0;
+  transition: 1.5s;
+  transform: translateX(200%);
+  overflow-y: auto;
+  &.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    div {
+      @include heading-6();
+      display: flex;
+      align-items: center;
+
+      & > * {
+        margin-right: 12px;
+      }
+
+      span {
+        display: block;
+        color: $primary-blue-1;
+      }
+    }
+  }
+
+  .comment-form {
+    padding: 0 30px 24px 30px;
+    textarea {
+      min-height: 142px;
+    }
+    border-bottom: solid 1px $divider-gray;
+  }
+
+  .comment-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    min-height: 768px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    .comment-item,
+    .repyl-item {
+      padding-bottom: 24px;
+      border-bottom: solid 1px $divider-gray;
+      & > *:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      p a {
+        color: $primary-blue-1;
+      }
+
+      .comment-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        .buttons {
+          display: flex;
+          align-items: center;
+          & > *:not(:last-child) {
+            margin-right: 8px;
+          }
+
+          button {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+              i {
+                color: $text-color-secondary-1;
+              }
+            }
+
+            &:focus i {
+              color: $primary-blue-1;
+            }
+          }
+        }
+
+        span {
+          display: none;
+          &.show {
+            display: block;
+          }
+        }
+      }
+
+      .reply-child {
+        display: none;
+        margin-top: 24px;
+
+        &.show {
+          display: block;
+        }
+
+        .reply-item {
+          display: flex;
+          .line {
+            width: 2px;
+            background: $primary-blue-1;
+            border: solid 1px $primary-blue-1;
+            position: relative;
+            left: 8px;
+          }
+
+          .content {
+            width: 100%;
+            margin-left: 24px;
+            word-break: break-all;
+            & > *:not(:last-child) {
+              margin-bottom: 12px;
+            }
+          }
+        }
+      }
     }
   }
 }
