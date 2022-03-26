@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
     .getBoundingClientRect().top;
 
   if (
-    !document.querySelector("header").classList.contains("bg-primary-blue-1")
+    document.querySelector("header").classList.contains("change-bg")
   ) {
     scrollPos > 120
       ? document.querySelector("header").classList.add("bg-primary-blue-1")
