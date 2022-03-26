@@ -1374,18 +1374,12 @@ header {
 
 /* ------------------------ BANNER --------------------------*/
 .banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: $misc-gradient-blue-1;
   color: $white;
-  padding: 36px;
   border-radius: 24px;
   box-shadow: 0px 32px 72px rgba(0, 87, 178, 0.16);
 
   .text {
-    width: calc(55% - 46px);
-    margin-right: 46px;
     .title {
       @include heading-5();
     }
@@ -1862,8 +1856,6 @@ aside {
 
 /* ---------------------- TAG -------------------------------- */
 .tag {
- 
-
   &.with-info {
     span {
       position: relative;
@@ -2054,4 +2046,9 @@ aside {
       }
     }
   }
+}
+
+/* ------------- RELATED ARTICLE ----------------- */
+.related-article {
+  background: #f5faff;
 }

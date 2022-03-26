@@ -1403,26 +1403,11 @@ header nav ul li .dropdown-1::before {
 
 /* ------------------------ BANNER --------------------------*/
 .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: linear-gradient(249.77deg, #0094ff -1.99%, #007dff 43.52%, #026ce8 95.86%);
   color: #ffffff;
-  padding: 36px;
   border-radius: 24px;
   -webkit-box-shadow: 0px 32px 72px rgba(0, 87, 178, 0.16);
           box-shadow: 0px 32px 72px rgba(0, 87, 178, 0.16);
-}
-
-.banner .text {
-  width: calc(55% - 46px);
-  margin-right: 46px;
 }
 
 .banner .text .title {
@@ -2226,5 +2211,10 @@ aside .sticky.absolute {
 .comment-box .comment-list .comment-item .reply-child .reply-item .content > *:not(:last-child),
 .comment-box .comment-list .repyl-item .reply-child .reply-item .content > *:not(:last-child) {
   margin-bottom: 12px;
+}
+
+/* ------------- RELATED ARTICLE ----------------- */
+.related-article {
+  background: #f5faff;
 }
 /*# sourceMappingURL=style.css.map */
