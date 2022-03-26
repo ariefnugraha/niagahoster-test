@@ -809,14 +809,14 @@
     </div>
     <!-- END MODAL -->
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script>
         // SHOW SIDEBAR AFTER SCROLLING PASS THE IMAGE NEWS
         window.addEventListener('scroll', () => {
             let articleImagePos = document.querySelector('.detail-article .main-image').getBoundingClientRect().bottom;
             let detailArticlePos = document.querySelector('.detail-article').getBoundingClientRect().bottom;
             let sidebarArticle = document.querySelector('.sidebar-article');
-            console.log(detailArticlePos)
+
             if (articleImagePos < 0 && detailArticlePos > 384) {
                 sidebarArticle.classList.add('show', 'scroll')
                 sidebarArticle.classList.remove('absolute');
@@ -882,7 +882,7 @@
                     document.querySelectorAll('button.like-article').forEach(el => {
                         el.classList.remove('liked')
                         el.querySelector('i').classList.add('bx-like');
-                        el.querySelector('i').classList.remove('bxs-like');
+                        el.querySelector('i').classList.remove('bxs-like', 'text-primary-blue-1');
                         el.querySelector('span').innerText = likecount;
                     })
                 } else {
@@ -891,7 +891,7 @@
                     document.querySelectorAll('button.like-article').forEach(el => {
                         el.classList.add('liked')
                         el.querySelector('i').classList.remove('bx-like');
-                        el.querySelector('i').classList.add('bxs-like');
+                        el.querySelector('i').classList.add('bxs-like', 'text-primary-blue-1');
                         el.querySelector('span').innerText = likecount;
                     })
                 }
